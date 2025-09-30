@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "youns119"
-  avatar           : "/assets/images/avatar.jpg"
+  avatar           : "/assets/Images/avatar.jpg"
   bio              : "게임 클라이언트 개발자를 꿈꾸는 중"
   location         : "South Korea"
   email            :
@@ -229,7 +229,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "Asia/Seoul"
 
 
 # Pagination with jekyll-paginate
