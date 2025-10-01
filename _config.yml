@@ -338,6 +338,7 @@ defaults:
       comments: true  # 댓글 기능
       share: true # 소셜 미디어 공유 버튼 표시
       related: true # 관련 글 목록 표시
+      mathjax: true # mathjax 기능 활성화
 
   - scope:
       path: "_pages"
