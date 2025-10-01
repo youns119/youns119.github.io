@@ -52,7 +52,7 @@ comments:
     category_name        : "Blog Comments"  # Discussion 카테고리 이름
     category_id          : "DIC_kwDOP5xVp84CwHEH"  # giscus가 생성해준 category ID
     discussion_term      : "pathname" # mapping 방식 (보통 pathname으로 함)
-    reactions_enabled    : "1"  # 댓글에 이모지 반응 허용
+    reactions_enabled    : '1'  # 댓글에 이모지 반응 허용
     theme                : "preferred_color_scheme" # 라이트/다크 테마 자동 전환
     strict               : 0  # default가 0임 (매핑할 때 엄격하게 안함)
     input_position       : "top"  # 댓글 작성 칸 위에 (default는 bottom)
