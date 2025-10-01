@@ -34,7 +34,7 @@ enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : giscus # giscus로 하면 repo의 discussion으로 댓글이 관리됨. 광고도 없고 관리도 쉬워서 그냥 이거 쓰기로 함
+  provider               : "giscus" # giscus로 하면 repo의 discussion으로 댓글이 관리됨. 광고도 없고 관리도 쉬워서 그냥 이거 쓰기로 함
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
