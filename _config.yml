@@ -104,10 +104,11 @@ social:
   links: # An array of links to social media profiles
 
 # Analytics
+# 방문 통계 하는데 사용하는 정보 (다른 통계도 확인 가능하다는데 그것까지는 너무 딥해서 모르겠다)
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag"  # google anayltics를 사용
   google:
-    tracking_id          :
+    tracking_id          : "G-YL7GB56P3H" # google analytics를 사용해 만든 웹 스트림의 측정 ID
     anonymize_ip         : # true, false (default)
 
 
