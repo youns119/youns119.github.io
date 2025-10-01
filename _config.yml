@@ -346,4 +346,10 @@ defaults:
       layout: single
       author_profile: true
 
+  # sitemap.xml에는 레이아웃 적용하지 않기
+  - scope:
+      path: "sitemap.xml"
+    values:
+      layout: null
+
 google_site_verification: "-otsBLdqVlOtm2hKIrSGF8OnmaYwiwXskGkoSo4F0LI" # 구글 Search Console 인증 키
