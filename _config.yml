@@ -68,9 +68,9 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true # 검색 기능 (default 값은 false)
 search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search_provider          : lunr # (algoria, google, pagefind 등 있는데 lunr가 default이기도 하고 가장 간단함. 참고로 규모 좀 커지면 pagefind할까 고민 중)
 lunr:
   search_within_pages    : # true, false (default)
 algolia:
