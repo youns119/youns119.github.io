@@ -23,7 +23,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "youns119" # 블로그 하단에 뜨는 이름
 description              : "A Github Blog of youns119" # 설명란이라는데 블로그에 보이는 게 아니라 그냥 메타 데이터로 쓰이는 설명글인듯..??
 url                      : "https://youns119.github.io" # 내 블로그 url
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : ""
 repository               : "youns119/youns119.github.io" # 이 블로그 배포하는 내 github 원격 repo 주소
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -273,10 +273,11 @@ pagination:
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-sitemap  # /sitemap.xml 생성해줌
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-seo-tag  # 이 플러그인이 title, canonical, opengraph 메타 등을 자동 삽입해줌
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -344,3 +345,5 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+google_site_verification: "-otsBLdqVlOtm2hKIrSGF8OnmaYwiwXskGkoSo4F0LI" # 구글 Search Console 인증 키

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://youns119.github.io/sitemap.xml
+
+# 구글 크롤러가 이 텍스트 파일 읽어서 sitemap 위치 확인하고 접근함
+# Allow 사용해서 내가 원하는 정보만 노출시키거나 특정 제한을 걸수도 있음
