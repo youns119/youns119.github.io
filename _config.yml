@@ -24,7 +24,7 @@ name                     : "youns119" # 블로그 하단에 뜨는 이름
 description              : "A Github Blog of youns119" # 설명란이라는데 블로그에 보이는 게 아니라 그냥 메타 데이터로 쓰이는 설명글인듯..??
 url                      : "https://youns119.github.io" # 내 블로그 url
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/youns119/youns119.github.io" # 이 블로그 배포하는 내 github 원격 repo 주소
+repository               : "youns119/youns119.github.io" # 이 블로그 배포하는 내 github 원격 repo 주소
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
