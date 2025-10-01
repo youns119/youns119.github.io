@@ -34,7 +34,7 @@ enable_copy_code_button  : # true, false (default)
 copyright                : # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : giscus # giscus로 하면 repo의 discussion으로 댓글이 관리됨. 광고도 없고 관리도 쉬워서 그냥 이거 쓰기로 함
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -48,17 +48,17 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-    strict               : # 1 for enabled, 0 for disabled (default)
-    input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
-    emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
-    lang                 : # "en" (default)
-    lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
+    repo_id              : "R_kgDOP5xVpw"  # giscus가 생성해준 repo ID
+    category_name        : "Blog Comments"  # Discussion 카테고리 이름
+    category_id          : "DIC_kwDOP5xVp84CwHEH"  # giscus가 생성해준 category ID
+    discussion_term      : "pathname" # mapping 방식 (보통 pathname으로 함)
+    reactions_enabled    : "1"  # 댓글에 이모지 반응 허용
+    theme                : "preferred_color_scheme" # 라이트/다크 테마 자동 전환
+    strict               : 0  # default가 0임 (매핑할 때 엄격하게 안함)
+    input_position       : "top"  # 댓글 작성 칸 위에 (default는 bottom)
+    emit_metadata        : 0  # 댓글 메타데이터 이벤트 비활성화 (default가 비활성화)
+    lang                 : "ko_KR"  # UI 한국어
+    lazy                 : true # 스크롤할 때 댓글 로드되도록 설정 (성능 개선용 설정)
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
@@ -333,7 +333,7 @@ defaults:
       layout: single  # single 레이아웃 (default 설정인데 대부분 그냥 이거 사용한다고 함)
       author_profile: true  # 글 하단에 작성자 프로필 표시
       read_time: true # 글 읽은 시간 표시
-      comments: # true  # 댓글 기능
+      comments: true  # 댓글 기능
       share: true # 소셜 미디어 공유 버튼 표시
       related: true # 관련 글 목록 표시
 

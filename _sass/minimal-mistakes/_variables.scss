@@ -7,7 +7,7 @@
    ========================================================================== */
 
 // 폰트 크기 (x-large로 갈수록 페이지 확대에 따른 폰트 확대 크기)
-$doc-font-size: 16px !default;
+$doc-font-size: 15px !default; // 15px로 바꿔줬는데 default는 16임
 $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
 $doc-font-size-x-large: $doc-font-size * 1.375 !default;
