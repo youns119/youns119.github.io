@@ -6,6 +6,7 @@
    Typography
    ========================================================================== */
 
+// 폰트 크기 (x-large로 갈수록 페이지 확대에 따른 폰트 확대 크기)
 $doc-font-size: 16px !default;
 $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
@@ -97,7 +98,7 @@ $darker-gray: mix(#000, $gray, 60%) !default;
 $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
-$background-color: #fff !default;
+$background-color: #fff !default;   // 배경 색상 설정
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
@@ -193,6 +194,7 @@ $max-width: $x-large !default;
    Grid
    ========================================================================== */
 
+// 이 부분 조절하면 포스트 본문 너비 조절 가능 (default : 200, 300, 400)
 $right-sidebar-width-narrow: 200px !default;
 $right-sidebar-width: 300px !default;
 $right-sidebar-width-wide: 400px !default;

@@ -128,17 +128,20 @@ blockquote {
 /* links */
 
 a {
+  text-decoration: none;  // 하이퍼링크 같은 모든 링크에서 밑줄 제거하는 코드
+
   &:focus {
-    @extend %tab-focus;
+    @extend %tab-focus; // 키보드 접근으로 포거싱 되었을 때 스타일 확장
   }
 
-  &:visited {
-    color: $link-color-visited;
-  }
+  // 나는 방문/비방문 링크 똑같이 보이게 하고 싶으니까 이 부분 주석 처리함
+  // &:visited {
+  //   color: $link-color-visited; // 방문한 링크 색상 설정
+  // }
 
   &:hover {
-    color: $link-color-hover;
-    outline: 0;
+    color: $link-color-hover; // 호버링하고 있는 링크 색상 설정
+    outline: 0; // 브라우저 기본 hover 아웃라인 제거
   }
 }
 

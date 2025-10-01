@@ -6,9 +6,14 @@
 
 html {
   /* apply a natural box layout model to all elements */
-  box-sizing: border-box;
-  background-color: $background-color;
-  font-size: $doc-font-size;
+  // html 태그에 대한 기본 스타일 초기화 코드
+  // 참고로 $background-color, $doc-font-size 등등은 Sass 변수로 _sass/minimal-mistakes/_variables에 기본값들이 저장되어있으니 거기 참고
+  box-sizing: border-box; // 박스 사이징 - border-box : 패딩/보더를 width 안에 포함
+  background-color: $background-color;  // 기본 배경 색상
+  font-size: $doc-font-size;  // 기본 폰트 크기
+
+// 밑에는 페이지 확대에 따라 폰트 크기가 바뀌는 반응형 폰트 설정
+// medium, large, x-large 순으로 점점 커짐
 
   @include breakpoint($medium) {
     font-size: $doc-font-size-medium;
@@ -22,8 +27,8 @@ html {
     font-size: $doc-font-size-x-large;
   }
 
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; // 웹 브라우저에 따라 자동으로 폰트 확대 안되게 설정
+  -ms-text-size-adjust: 100%; // 구형 브라우저에서도 똑같이 폰트 확대 방지
 }
 
 /* Remove margin */

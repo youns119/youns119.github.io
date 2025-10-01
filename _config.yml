@@ -11,20 +11,20 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme           : "mmistakes/minimal-mistakes" # remote_theme으로 해야 충돌 안남
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"  # 기본 테마 : 일단은 dark 로 해놓음
 
 # Site Settings
-locale                   : "ko_KR"
+locale                   : "ko_KR"  # 기본 언어 (ko_KR이 한글)
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "youns119's Github Blog"
+title                    : "youns119's Github Blog" # 좌측 상단에 뜨는 블로그 이름
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "youns119"
-description              : "프로그래밍 공부 블로그"
-url                      : "https://youns119.github.io"
+name                     : "youns119" # 블로그 하단에 뜨는 이름
+description              : "A Github Blog of youns119" # 설명란이라는데 블로그에 보이는 게 아니라 그냥 메타 데이터로 쓰이는 설명글인듯..??
+url                      : "https://youns119.github.io" # 내 블로그 url
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/youns119/youns119.github.io"
+repository               : "https://github.com/youns119/youns119.github.io" # 이 블로그 배포하는 내 github 원격 repo 주소
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -112,16 +112,17 @@ analytics:
 
 
 # Site Author
+# 화면 좌측에 뜨는 내 프로파일 적는 부분
 author:
-  name             : "youns119"
-  avatar           : "/assets/Images/avatar.jpg"
-  bio              : "게임 클라이언트 개발자를 꿈꾸는 중"
-  location         : "South Korea"
+  name             : "youns119" # 내 이름 및 아이디
+  avatar           : "/assets/Images/avatar.jpg"  # 아바타에 걸릴 사진 첨부 (주로 assets 폴더 만들어서 그 안에 이미지 넣어서 첨부)
+  bio              : "게임 클라이언트 개발자를 꿈꾸는 중" # 짧은 블로그 소개글
+  location         : "South Korea"  # 내 지역 쓰는 곳
   email            :
-  links:
+  links:  # 내가 노출시키고 싶은 이메일, 웹사이트, sns 등등 쓰는곳
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jyw19970521@gmail.com"
+      url: "mailto:jyw19970521@gmail.com" # 메일 쓰는 곳인데 앞에 malito:를 꼭 써줘야된다. 아니면 링크가 안됨
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -133,14 +134,19 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/youns119"
+      url: "https://github.com/youns119"  # 내 Github 주소
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
 
 # Site Footer
+# 화면 하단에 노출시킬 수 있는 링크들
+# 위랑 똑같이 하면 된다 (선택사항이라 안해도 되긴 함)
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jyw19970521@gmail.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
@@ -149,7 +155,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/youns119"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -228,13 +234,18 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
-timezone: Asia/Seoul
+# 글/페이지가 생성될 때의 출력 규칙 정하는 곳
+permalink: /:categories/:title/ # 글 주소가 이렇게 생성된다고 형식을 정해주는 부분 (이게 default 설정임)
+timezone: Asia/Seoul # 내 시간대 설정하는 부분. 
+# 다른 사람들은 timezone 부분 그냥 공백으로 두면 default로 되서 기기의 시간대랑 맞춰준다는데
+# 나는 뭐가 잘못됐는지 시간대가 잘못 잡혀서 블로그 글이 업데이트가 안됐음
+# 그래서 그냥 수동으로 시간대 잡아줬는데 그러면 Gemfile 부분에 관련 메타데이터 추가해줘야됨 (그 부분은 Gemfile 파일 참조)
 
 
 # Pagination with jekyll-paginate
-paginate: 10 # amount of posts to show
-paginate_path: /page:num/
+# 글을 여러 페이지로 나눠서 보여주는 paginate 설정 부분
+paginate: 10 # 한 페이지에 보여줄 글 갯수 설정
+paginate_path: /page:num/ # paginate 주소 형식 설정 (이게 default 설정)
 
 # Pagination with jekyll-paginate-v2
 # See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
@@ -313,15 +324,22 @@ compress_html:
 
 
 # Defaults
+# 각 부문에 대해서 default 형식 값을 설정해주는 부분
 defaults:
-  # _posts
   - scope:
-      path: ""
-      type: posts
+      path: ""  # 어떤 경로의 파일들에 적용할 것인지 (공백이면 전체 경로)
+      type: posts # 어떤 타입에 적용할 것인지 (posts : _posts 폴더 내의 글, pages : 그 외의 모든 글)
+    values:
+      layout: single  # single 레이아웃 (default 설정인데 대부분 그냥 이거 사용한다고 함)
+      author_profile: true  # 글 하단에 작성자 프로필 표시
+      read_time: true # 글 읽은 시간 표시
+      comments: # true  # 댓글 기능
+      share: true # 소셜 미디어 공유 버튼 표시
+      related: true # 관련 글 목록 표시
+
+  - scope:
+      path: "_pages"
+      type: pages
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
