@@ -12,7 +12,7 @@
 <!--MathJax 기능 추가 부분-->
 <!--Mathjax 공식 사이트에서 아예 스니펫을 가져오는 방식도 있지만
     기본적으로 이렇게 custom에 정의해 놓는게 코어 파일 수정도 없고 테마 업데이트에도 안전하다고 한다-->
-{% raw %}{% if page.mathjax or site.mathjax %}{% endraw %}
+{% if page.mathjax or site.mathjax %}
 <script>
   window.MathJax = {
     tex: {
@@ -24,6 +24,6 @@
   };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-{% raw %}{% endif %}{% endraw %}
+{% endif %}
 
 <!-- end custom head snippets -->
