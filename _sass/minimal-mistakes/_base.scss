@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 2em 0 0.5em;
+  margin: 1.3em 0 0.5em;  // 헤더(제목) 윗쪽 여백 크기 -> 라는데 적용해보니 Home 에서 게시물 제목 윗쪽 여백이 바뀜 (default : 2em 0 0.5em)
   line-height: 1.2;
   font-family: $font-custom;
   font-weight: bold;
@@ -66,7 +66,7 @@ small,
 }
 
 p {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.5em; // 문단 아래 여백 크기 (default 1.3em)
 }
 
 u,

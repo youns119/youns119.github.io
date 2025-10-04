@@ -334,7 +334,7 @@ defaults:
     values:
       layout: single  # single 레이아웃 (default 설정인데 대부분 그냥 이거 사용한다고 함)
       author_profile: true  # 글 하단에 작성자 프로필 표시
-      read_time: true # 글 읽은 시간 표시
+      read_time: false # 글 읽은 시간 표시
       comments: true  # 댓글 기능
       share: true # 소셜 미디어 공유 버튼 표시
       related: true # 관련 글 목록 표시
