@@ -26,7 +26,7 @@ url                      : "https://youns119.github.io" # 내 블로그 url
 baseurl                  : ""
 repository               : "youns119/youns119.github.io" # 이 블로그 배포하는 내 github 원격 repo 주소
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/logo.png"  # 블로그 타이틀 옆에 로고 이미지
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -116,7 +116,7 @@ analytics:
 # 화면 좌측에 뜨는 내 프로파일 적는 부분
 author:
   name             : "youns119" # 내 이름 및 아이디
-  avatar           : "/assets/Images/avatar.jpg"  # 아바타에 걸릴 사진 첨부 (주로 assets 폴더 만들어서 그 안에 이미지 넣어서 첨부)
+  avatar           : "/assets/Images/avatar_.gif"  # 아바타에 걸릴 사진 첨부 (주로 assets 폴더 만들어서 그 안에 이미지 넣어서 첨부, gif 넣어봤는데 됨...)
   bio              : "게임 클라이언트 개발자를 꿈꾸는 중" # 짧은 블로그 소개글
   location         : "South Korea"  # 내 지역 쓰는 곳
   email            :

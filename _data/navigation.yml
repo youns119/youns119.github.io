@@ -8,8 +8,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "Search"
-    url: /search/
+  # - title: "Search" # 돋보기 아이콘만 쓰고 싶어서 이건 주석 처리함
+  #   url: /search/
 
   # 우측 상단 메뉴들 표시하는 부분
   # Home 제외하고 About, Category 등등 커스텀 메뉴 만들면 _pages 폴더에서 permalink 포함한 개별 페이지 파일 만들어줘야함

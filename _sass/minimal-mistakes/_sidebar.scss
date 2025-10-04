@@ -133,13 +133,14 @@
     height: auto;
   }
 
+  // 사이드바의 avatar 이미지를 개조할 수 있다 (크기, 곡률, 패딩 등등)
   img {
-    max-width: 110px;
-    border-radius: 50%;
+    max-width: 200px;
+    border-radius: 20%;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 5px solid $border-color;
     }
   }
 }
