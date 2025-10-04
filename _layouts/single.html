@@ -59,7 +59,6 @@ layout: default
           {% if site.tag_archive.type and page.tags[0] %}
             {% include tag-list.html %} 
           {% endif %}
-          {% if page.share %}{% include social-share.html %}{% endif %}
         </header>
       {% endunless %}
       <section class="page__content" itemprop="text">
@@ -80,6 +79,7 @@ layout: default
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {% include page__taxonomy.html %}
+        {% if page.share %}{% include social-share.html %}{% endif %}
       </footer>
     </div>
 
