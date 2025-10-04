@@ -53,19 +53,14 @@ layout: default
               <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%Y.%m.%d" }}</time>
             </p>
           {% endif %}
-          {% if site.category_archive.type and page.categories[0] %}
-            {% include category-list.html %}
-          {% endif %}
-          {% if site.tag_archive.type and page.tags[0] %}
-            {% include tag-list.html %} 
-          {% endif %}
         </header>
       {% endunless %}
+
       <section class="page__content" itemprop="text">
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "Index" }}</h4></header>
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
             </nav>
           </aside>
@@ -82,10 +77,6 @@ layout: default
         {% if page.share %}{% include social-share.html %}{% endif %}
       </footer>
     </div>
-
-    {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
-      {% include comments.html %}
-    {% endif %}
   </article>
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
@@ -111,5 +102,9 @@ layout: default
         {% endfor %}
       </div>
     </div>
+  {% endif %}
+
+  {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
+    {% include comments.html %}
   {% endif %}
 </div>
