@@ -24,7 +24,13 @@
         </ul>
         {% if site.search == true %}
         <!--돋보기 아이콘 클릭했을 때 search.md로 연결되도록 개조함-->
-        <a class="search__toggle"
+        <!-- <a class="search__toggle"
+           href="{{ '/search/' | relative_url }}"
+           aria-label="{{ site.data.ui-text[site.locale].search_label | default: 'Search' }}">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Search" }}</span>
+          <i class="fas fa-search"></i>
+        </a> -->
+        <a class="search__link"
            href="{{ '/search/' | relative_url }}"
            aria-label="{{ site.data.ui-text[site.locale].search_label | default: 'Search' }}">
           <!-- <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Search" }}</span> -->
