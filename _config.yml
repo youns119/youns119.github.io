@@ -116,7 +116,7 @@ analytics:
 # 화면 좌측에 뜨는 내 프로파일 적는 부분
 author:
   name             : "youns119" # 내 이름 및 아이디
-  avatar           : "/assets/Images/avatar_.gif"  # 아바타에 걸릴 사진 첨부 (주로 assets 폴더 만들어서 그 안에 이미지 넣어서 첨부, gif 넣어봤는데 됨...)
+  avatar           : "/assets/images/avatar_.gif"  # 아바타에 걸릴 사진 첨부 (주로 assets 폴더 만들어서 그 안에 이미지 넣어서 첨부, gif 넣어봤는데 됨...)
   bio              : "게임 클라이언트 개발자를 꿈꾸는 중" # 짧은 블로그 소개글
   location         : "South Korea"  # 내 지역 쓰는 곳
   email            :
