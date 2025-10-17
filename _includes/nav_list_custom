@@ -5,7 +5,7 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <li>
-            📂 <span style="font-family:'GyeonggiMillenniumBackground';">Total {{sum}}</style>
+            📂 <span style="font-family:'GowunDodum';">Total {{sum}}</style>
       </li>
       <li>
         <span class="nav__sub-title">Etc</span>

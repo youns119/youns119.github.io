@@ -14,3 +14,4 @@ $font-custom: "GyeonggiMillenniumBackground";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+@import "custom"; // 내 _custom.scss 파일 import 시키기

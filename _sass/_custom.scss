@@ -1,0 +1,48 @@
+// sidebar 부분의 author__url 쪽 커스텀 오버라이드
+
+.sidebar .author__urls a,
+.sidebar .author__urls li.author__location {
+  font-size: 0.9em;       /* 글자 크기 줄임 */
+  line-height: 1.2;       /* 줄 간격 압축 */
+  margin-bottom: 2px;     /* 항목 간 간격 줄임 */
+  padding-block: 0;       /* 위아래 패딩 제거 */
+  display: inline-flex;   /* 아이콘과 텍스트를 한 줄에 정렬 */
+  align-items: center;    /* 수직 중앙 정렬 */
+  gap: 0.35em;            /* 아이콘-텍스트 간격 */
+  color: inherit;         /* 글자색 상속 */
+  text-decoration: none;  /* 링크 밑줄 제거 */
+}
+
+.sidebar .author__urls i,
+.sidebar .author__urls .svg-inline--fa {
+  font-size: 0.95em;      /* 아이콘 크기 약간 축소 */
+  margin-right: 0;        /* 기존 여백 제거 (gap으로 대체) */
+  vertical-align: middle; /* 정렬 보정 */
+}
+
+.sidebar .author__urls li {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar .author__urls li[itemprop="homeLocation"] {
+  display: inline-flex;
+  align-items: center;
+  gap: .35em;
+  margin-bottom: 2px;
+  padding: 0;
+}
+
+.sidebar .author__urls li[itemprop="homeLocation"] > i,
+.sidebar .author__urls li[itemprop="homeLocation"] .svg-inline--fa {
+  font-size: 0.95em;
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+/* 실제 "South Korea" 텍스트(span.p-locality)에 폰트 적용 */
+.sidebar .author__urls li[itemprop="homeLocation"] .p-locality,
+.sidebar .author__urls li[itemprop="homeLocation"] [itemprop="name"] {
+  font-size: 0.9em !important;
+  line-height: 1.2;
+}
