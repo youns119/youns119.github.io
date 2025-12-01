@@ -79,6 +79,16 @@ body {
   }
 }
 
+.layout--archive .page__title {
+  margin: 0.5em 0 0.5em;       // 위·아래 여백
+  padding-bottom: 0.5em;       // 아래 여백 + 구분선 간격
+  font-family: $serif;
+  font-size: $type-size-4;     // .archive__subtitle 과 동일
+  font-weight: bold;
+  color: mix(#ffffff, $primary-color, 30%); // 홈과 같은 톤
+  border-bottom: 1px solid $border-color;   // 구분선 추가
+}
+
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
