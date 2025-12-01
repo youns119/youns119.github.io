@@ -79,14 +79,26 @@ body {
   }
 }
 
-.layout--archive .page__title {
+.layout--archive .page__title, 
+.layout--category .page__title, 
+.layout--categories .page__title, 
+.layout--tags .page__title {
   margin: 0.5em 0 0.5em;       // 위·아래 여백
   padding-bottom: 0.5em;       // 아래 여백 + 구분선 간격
-  font-family: $serif;
+  font-family: $sans-serif;
   font-size: $type-size-4;     // .archive__subtitle 과 동일
   font-weight: bold;
-  color: mix(#ffffff, $primary-color, 30%); // 홈과 같은 톤
+  color: mix(#ffffff, $primary-color, 5%); // 홈과 같은 톤
   border-bottom: 1px solid $border-color;   // 구분선 추가
+}
+
+.layout--search .page__title {
+  margin: 0.5em 0 0.5em;       // 위·아래 여백
+  padding-bottom: 0.5em;       // 아래 여백 + 구분선 간격
+  font-family: $sans-serif;
+  font-size: $type-size-4;     // .archive__subtitle 과 동일
+  font-weight: bold;
+  color: mix(#ffffff, $primary-color, 5%); // 홈과 같은 톤
 }
 
 .page__lead {
@@ -367,7 +379,7 @@ body {
   border: 1px solid $background-color;
   border-radius: $border-radius;
   background-color: #4D5357;
-  font-family: $serif;
+  font-family: $sans-serif;
   color: $primary-color;
 
   &:hover {
@@ -385,7 +397,7 @@ body {
   border: 1px solid $background-color;
   border-radius: $border-radius;
   background-color: mix(#fff, #4D5357, 18%);
-  font-family: $serif;
+  font-family: $sans-serif;
   color: $primary-color;
 
   &:hover {
@@ -440,7 +452,9 @@ body {
   grid-template-columns: repeat(2, 1fr);
   margin: 1.414em 0;
   padding: 0;
-  font-size: 0.75em;
+  font-family: $sans-serif;
+  font-size: 1.0em;
+  color: mix(#ffffff, $third-color, 30%);
   list-style: none;
 
   @include breakpoint($large) {

@@ -21,6 +21,7 @@
 .archive__item {
   position: relative;
   font-size: 1.1em; // Home 페이지에서 포스트 제목 크기
+  margin-bottom: 1.0rem;
 
   a {
     position: relative;
@@ -35,8 +36,9 @@
 .archive__subtitle {
   margin: 0.5em 0 0.5em;
   padding-bottom: 0.5em;
+  font-family: $sans-serif;
   font-size: $type-size-4;
-  color: mix(#ffffff, $primary-color, 30%);
+  color: mix(#ffffff, $primary-color, 5%);
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
@@ -46,7 +48,7 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: $sans-serif;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -72,6 +74,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
+  font-family: $serif;
   font-size: $type-size-6;
 
   & + p {
@@ -123,8 +126,11 @@
    ========================================================================== */
 
 .list__item {
+  font-family: $sans-serif;
+  margin-bottom: 0.4rem;
+
   .page__meta {
-    margin: 0 0 4px;
+    margin: 4 0 4px;
     font-size: 0.6em;
   }
 }
@@ -429,4 +435,10 @@
 	.feature__wrapper {
 		display: inline-block;
 	}
+}
+
+.layout--categories .entries-list > .archive-item,
+.layout--tags .entries-list > .archive-item {
+  margin-bottom: 0.4rem !important;
+  font-family: $sans-serif;
 }
