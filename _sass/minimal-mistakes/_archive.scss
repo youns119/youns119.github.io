@@ -20,7 +20,7 @@
 
 .archive__item {
   position: relative;
-  font-size: 0.9em; // Home 페이지에서 포스트 제목 크기
+  font-size: 1.1em; // Home 페이지에서 포스트 제목 크기
 
   a {
     position: relative;
@@ -33,10 +33,10 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
+  margin: 0.5em 0 0.5em;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: $muted-text-color;
+  font-size: $type-size-4;
+  color: mix(#ffffff, $primary-color, 30%);
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
