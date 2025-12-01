@@ -375,11 +375,20 @@ body {
   border-radius: $border-radius;
   background-color: mix(#fff, #4D5357, 18%);
   font-family: $serif;
-  color: mix(#fff, $primary-color, 2%);;
+  color: $primary-color;
 
   &:hover {
     text-decoration: none;
     color: $link-color-visited; /* 커서 댈 때 색깔 */
+  }
+}
+
+.page__meta a.page__taxonomy-item-tag,
+.page__meta a.page__taxonomy-item-category {
+  color: $primary-color;
+
+  &:hover {
+    color: $link-color-visited;
   }
 }
 

@@ -7,6 +7,7 @@ $background-color: #303446 !default;  // 블로그 배경 색상 (default : #252
 $text-color: #eaeaea !default;
 $primary-color: #E5BA71 !default; // primary-color 색상 (뭐 여러데에 쓰이는 주요 색상 default : #00adb5)
 $secondary-color: #CA9CE1 !default; // secondary-color 색상 (내 커스텀 색상)
+$third-color: #A6D189 !default; // third-color 색상
 $border-color: mix(#fff, $background-color, 20%) !default;
 $code-background-color: mix(#000, $background-color, 15%) !default;
 $code-background-color-dark: mix(#000, $background-color, 20%) !default;

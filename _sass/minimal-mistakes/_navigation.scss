@@ -436,17 +436,47 @@
   }
 }
 
+// .nav__list .nav__items {
+//   margin: 0;
+//   font-size: 1.25rem;
+
+//   a {
+//     color: inherit;
+//   }
+
+//   .active {
+//     margin-inline-start: -0.5em;
+//     padding-inline: 0.5em;
+//     font-weight: bold;
+//   }
+
 .nav__list .nav__items {
   margin: 0;
   font-size: 1.25rem;
+  font-family: $sans-serif;
+
+  img { // 방문자수 이미지 크기 맞추느라 추가했던 것
+    width: auto; height: auto;
+    max-width: 140px;
+    max-height: 38px;
+    margin-bottom: 1em;
+  }
 
   a {
     color: inherit;
+    font-size: $type-size-4;
+    font-family: $sans-serif;
+    color: mix(#fff,$primary-color,80%);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .active {
-    margin-inline-start: -0.5em;
-    padding-inline: 0.5em;
+    margin-left: -0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     font-weight: bold;
   }
 
@@ -491,8 +521,9 @@
   margin: 0.5rem 0;
   padding: 0.25rem 0;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-6;
+  font-size: $type-size-4;
   font-weight: bold;
+  color: mix(#fff,$primary-color,10%);
   text-transform: uppercase;
   border-bottom: 1px solid $border-color;
 }
@@ -568,4 +599,9 @@
   li ul li ul li ul li ul li ul > li a {
     padding-inline-start: 3.25rem;
   }
+
+}
+
+  #category_tag_menu > li:first-child {
+  font-size: 0.7em;   // 부모(0.9rem) 기준 비율
 }
