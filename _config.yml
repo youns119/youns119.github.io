@@ -245,7 +245,7 @@ timezone: Asia/Seoul # 내 시간대 설정하는 부분.
 
 # Pagination with jekyll-paginate
 # 글을 여러 페이지로 나눠서 보여주는 paginate 설정 부분
-paginate: 1 # 한 페이지에 보여줄 글 갯수 설정
+paginate: 10 # 한 페이지에 보여줄 글 갯수 설정
 paginate_path: /page:num/ # paginate 주소 형식 설정 (이게 default 설정)
 
 # Pagination with jekyll-paginate-v2
