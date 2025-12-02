@@ -40,6 +40,8 @@ var store = [
               replace:"</h6>", " "|
             strip_html | strip_newlines | truncatewords: 50 | jsonify }},
           {%- endif -%}
+        "page_excerpt": {{ doc.excerpt | strip_html | strip_newlines | jsonify }},
+        "date": {{ doc.date | date: "%Y.%m.%d" | jsonify }},
         "categories": {{ doc.categories | jsonify }},
         "tags": {{ doc.tags | jsonify }},
         "url": {{ doc.url | relative_url | jsonify }},
