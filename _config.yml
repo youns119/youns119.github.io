@@ -57,7 +57,7 @@ comments:
     strict               : 0  # default가 0임 (매핑할 때 엄격하게 안함)
     input_position       : "top"  # 댓글 작성 칸 위에 (default는 bottom)
     emit_metadata        : 0  # 댓글 메타데이터 이벤트 비활성화 (default가 비활성화)
-    lang                 : "ko"  # UI 한국어
+    lang                 : "en"  # UI lang
     lazy                 : true # 스크롤할 때 댓글 로드되도록 설정 (성능 개선용 설정)
   staticman:
     branch               : # "master"
