@@ -339,6 +339,7 @@
 
 .nav__list {
   margin-bottom: 1.5em;
+  padding-bottom: 40px; // 2~3줄 올라올 정도로 원하는 값
 
   input[type="checkbox"],
   label {
@@ -551,7 +552,7 @@
 
   // Scrollspy marks toc items as .active when they are in focus
   .active a {
-    @include yiq-contrasted($active-color);
+    @include yiq-contrasted(mix(#ffffff, $third-color, 60%));
   }
 }
 
@@ -573,10 +574,6 @@
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
-
-    &:hover {
-      color: $text-color;
-    }
   }
 
   li ul > li a {
@@ -604,6 +601,60 @@
 
   #category_tag_menu > li:first-child {
   font-size: 0.8em;   // 부모(0.9rem) 기준 비율
+}
+
+/* === TOC 전체 박스 없애기 === */
+.toc {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* "Index" 헤더 감추거나, 스타일 최소화 */
+.toc .nav__title {
+  display: none;   // 헤더 자체 안 보이게
+  // 만약 텍스트만 바꾸고 싶으면 _data/ui-text.yml 의 toc_label 수정
+}
+
+/* === 목록을 노션 스타일처럼 얇은 리스트로 === */
+
+.toc__menu,
+.toc__menu ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* 왼쪽에 얇은 세로 라인 느낌 (원하면) */
+.toc__menu {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);  // 다크 테마 기준
+  padding-left: 0.75rem;
+}
+
+.toc__menu > li {
+  margin: 0.15rem 0;
+  border: none;
+}
+
+/* 링크 스타일 */
+.toc__menu a {
+  display: block;
+  font-size: 0.9rem;
+  padding: 2px 0;
+  text-decoration: none;
+  color: #f5f5f5;          // 다크테마 글자색
+}
+
+.toc__menu a:hover {
+  text-decoration: underline;
+}
+
+/* 하위 제목 들여쓰기 */
+.toc__menu ul {
+  margin-top: 0.1rem;
+  margin-left: 0.75rem;
+  border-left: none;       // 필요하면 여기에도 선 추가 가능
 }
 
 /* ===========================================================

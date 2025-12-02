@@ -3,9 +3,9 @@ title:  "Secondary"
 excerpt: "Test용 게시글"
 
 categories:
-  - Data-Structure
+  - Data Structure
 tags:
-  - [Etc, jekyll, Github, Git]
+  - [Data Structure, jekyll, Github, Git]
 
 toc: true
 toc_sticky: true

@@ -5,7 +5,7 @@ excerpt: "첫 블로그 개시 기념 글을 올려보자"
 categories:
   - Cpp
 tags:
-  - [C++, jekyll, Github, Git]
+  - [Cpp, jekyll, Github, Git]
 
 toc: true
 toc_sticky: true
