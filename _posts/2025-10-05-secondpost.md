@@ -3,7 +3,7 @@ title:  "Secondary"
 excerpt: "Test용 게시글"
 
 categories:
-  - Etc
+  - Data-Structure
 tags:
   - [Etc, jekyll, Github, Git]
 

@@ -3,9 +3,9 @@ title:  "First"
 excerpt: "첫 블로그 개시 기념 글을 올려보자"
 
 categories:
-  - Etc
+  - Cpp
 tags:
-  - [Etc, jekyll, Github, Git]
+  - [C++, jekyll, Github, Git]
 
 toc: true
 toc_sticky: true

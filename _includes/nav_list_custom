@@ -8,11 +8,41 @@
             📂 <span style="font-family:'GowunDodum';">Total {{sum}}</style>
       </li>
       <li>
+        <span class="nav__sub-title">C/C++/C#</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Cpp" %}
+                        <li><a href="/Categories/Cpp" class="">C++ ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "CSharp" %}
+                        <li><a href="/Categories/CSharp" class="">C# ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "C" %}
+                        <li><a href="/Categories/C" class="">C ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Data-Structure" %}
+                        <li><a href="/Categories/Data-Structure" class="">Data Structure ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
         <span class="nav__sub-title">Etc</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Etc" %}
-                        <li><a href="/Etc" class="">Etc ({{category[1].size}})</a></li>
+                        <li><a href="/Categories/Etc" class="">Etc ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
