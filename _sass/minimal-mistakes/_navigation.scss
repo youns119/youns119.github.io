@@ -543,8 +543,8 @@
 
   .nav__title {
     color: #fff;
-    font-size: $type-size-6;
-    background: $primary-color;
+    font-size: $type-size-5m;
+    background: $third-color;
     border-start-start-radius: $border-radius;
     border-start-end-radius: $border-radius;
   }
@@ -560,10 +560,10 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-6;
+  font-size: $type-size-5m;
 
   @include breakpoint($large) {
-    font-size: $type-size-7;
+    font-size: $type-size-6;
   }
 
   a {
@@ -603,5 +603,5 @@
 }
 
   #category_tag_menu > li:first-child {
-  font-size: 0.7em;   // 부모(0.9rem) 기준 비율
+  font-size: 0.8em;   // 부모(0.9rem) 기준 비율
 }
