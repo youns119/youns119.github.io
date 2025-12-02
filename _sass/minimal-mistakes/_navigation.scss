@@ -605,3 +605,137 @@
   #category_tag_menu > li:first-child {
   font-size: 0.8em;   // 부모(0.9rem) 기준 비율
 }
+
+/* ===========================================================
+   Single post prev/next pagination (카드형, 좌우 배치)
+   =========================================================== */
+
+/* 위쪽 구분선 포함 전체 래퍼 */
+.post-pagination-wrapper {
+  margin-top: 2.5rem;
+  padding-top: 5rem;
+}
+
+/* 이전/다음 카드 두 개를 좌우로 배치 */
+.post-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+/* 카드 안 텍스트 영역(div) : 화살표와 제목 사이 공간을 담당 */
+.post-pagination .pagination--pager > div {
+  flex: 1 1 auto;        // 양쪽 화살표 사이에서 남는 공간 채우기
+  min-width: 0;          // flex 안에서 ellipsis 동작하려면 필수
+  display: flex;         // 세로 정렬용
+  flex-direction: column;
+}
+
+/* 라벨(Prev / Next) 기본 스타일 */
+.post-pagination .pagination__label {
+  margin-bottom: 0.1rem;
+  font-size: $type-size-7;
+  color: $muted-text-color;
+}
+
+/* 실제 글 제목: 한 줄 + ... 처리 */
+.post-pagination .pagination__title {
+  display: block;
+  width: 100%;               // 부모 div 전체 폭 사용
+  margin-top: 0.05rem;
+  white-space: nowrap;       // 한 줄만
+  overflow: hidden;          // 넘치는 부분 숨기기
+  text-overflow: ellipsis;   // ... 표시
+  font-size: $type-size-5m;
+}
+
+/* 개별 카드 (이전글 / 다음글 공통) */
+.post-pagination .pagination--pager {
+  flex: 1;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.04);
+  border: 1px solid mix(#000, $border-color, 25%);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;          // 카드 밖으로 튀어나가는 것만 잘라줌
+
+  font-family: $sans-serif;
+  text-decoration: none;
+  color: mix(#fff, $primary-color, 5%);
+
+  transition: 0.2s ease;
+}
+
+.post-pagination .pagination--pager:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-2px);
+}
+
+.post-pagination .pagination--pager.placeholder {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+/* 동그란 화살표 아이콘 */
+.post-pagination .pagination--pager.previous::before,
+.post-pagination .pagination--pager.next::after {
+  content: "";
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  border: 2px solid $third-color;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: $third-color;
+  flex-shrink: 0;
+}
+
+.post-pagination .pagination--pager.previous::before {
+  content: "←";
+  margin-right: 1rem;
+}
+
+.post-pagination .pagination--pager.next::after {
+  content: "→";
+  margin-left: 1rem;
+}
+
+/* 이전 포스트 카드: 왼쪽 정렬 */
+.post-pagination .previous > div {
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* 다음 포스트 카드: 오른쪽 정렬 */
+.post-pagination .next > div {
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Prev 라벨을 왼쪽 끝에서 살짝 안쪽으로 */
+.post-pagination .previous .pagination__label {
+  margin-left: 0.5rem;
+}
+
+/* Next 라벨을 오른쪽 끝에서 살짝 안쪽으로 */
+.post-pagination .next .pagination__label {
+  margin-right: 0.5rem;
+}
+
+/* 모바일에서는 위아래로 쌓이게 */
+@include breakpoint(max-width $large - 1px) {
+  .post-pagination {
+    flex-direction: column;
+  }
+}

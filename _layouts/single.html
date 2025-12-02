@@ -82,6 +82,33 @@ layout: default
         {% if page.share %}{% include social-share.html %}{% endif %}
       </footer>
 
+      {% if page.previous or page.next %}
+        <div class="post-pagination-wrapper">
+          <div class="post-pagination">
+            {% if page.previous %}
+              <a class="pagination--pager previous" href="{{ page.previous.url | relative_url }}">
+                <div>
+                  <span class="pagination__label">Prev</span>
+                  <span class="pagination__title">{{ page.previous.title }}</span>
+                </div>
+              </a>
+            {% else %}
+              <div class="pagination--pager placeholder"></div>
+            {% endif %}
+            {% if page.next %}
+              <a class="pagination--pager next" href="{{ page.next.url | relative_url }}">
+                <div>
+                  <span class="pagination__label">Next</span>
+                  <span class="pagination__title">{{ page.next.title }}</span>
+                </div>
+              </a>
+            {% else %}
+              <div class="pagination--pager placeholder"></div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
       {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
         {% include comments.html %}
       {% endif %}

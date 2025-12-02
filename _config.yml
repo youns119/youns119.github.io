@@ -336,7 +336,7 @@ defaults:
       author_profile: true  # 글 하단에 작성자 프로필 표시
       read_time: false # 글 읽은 시간 표시
       comments: true  # 댓글 기능
-      share: true # 소셜 미디어 공유 버튼 표시
+      share: false # 소셜 미디어 공유 버튼 표시
       related: true # 관련 글 목록 표시
       mathjax: true # mathjax 기능 활성화
       sidebar_custom: true # 커스텀으로 만든 카테고리 사이드바 표시
