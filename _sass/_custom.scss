@@ -56,7 +56,17 @@
 /* 모바일에서 프로필 아바타 크게 보이게 */
 @media (max-width: 768px) {
   .author__avatar {
-    width: 80px;   // 원래 56px 정도라면 조금 키운 값
-    height: 80px;
+    display: table-cell;     // PC와 동일 구조 유지
+    vertical-align: top;
+
+    width: 80px;   /* ← 원하는 모바일 width */
+    height: 80px;  /* ← 원하는 모바일 height */
+    /* 원래 36px → 조금 키운 버전 */
+
+    img {
+      max-width: 100%;   /* 컨테이너 안에 꽉 차도록 */
+      border-radius: 20%;  /* PC 버전과 동일 */
+      /* 모바일에서는 border/padding 빼고 깔끔하게 유지 */
+    }
   }
 }
