@@ -51,10 +51,8 @@
   html {
     font-size: 18px !important;  // 기본 16px → 18px 정도
   }
-}
 
-/* 모바일에서 프로필 아바타 크게 보이게 */
-@media (max-width: 768px) {
+  /* 모바일에서 프로필 아바타 크게 보이게 */
   .author__avatar {
     display: table-cell;     // PC와 동일 구조 유지
     vertical-align: top;
@@ -69,18 +67,15 @@
       /* 모바일에서는 border/padding 빼고 깔끔하게 유지 */
     }
   }
-}
 
-/* 모바일에서 아바타 오른쪽 텍스트/버튼을 아래로 내리기 */
-@media (max-width: 768px) {
-  .author__content {
-    margin-top: 20px !important;   /* 원하는 만큼 조절 */
+  /* 모바일에서 아바타 오른쪽 텍스트/버튼을 아래로 내리기 */
+  .sidebar .author__content {
+    padding-top: 20px !important;   /* ← 이 값을 조절해서 더 위/아래로 */
+    vertical-align: top;            /* (원래 middle일 가능성 → 위로 맞추기) */
   }
-}
 
-/* 모바일에서는 사이드바 아래 패딩 제거 */
-@media (max-width: 768px) {
-  .sidebar {
+  /* 모바일에서는 사이드바 아래 패딩 제거 */
+  .nav__list {
     padding-bottom: 0 !important;
   }
 }
