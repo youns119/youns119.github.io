@@ -5,12 +5,19 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         {% unless logo_path == empty %}
-          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+          <a class="site-logo" href="{{ '/' | relative_url }}">
+            <img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}">
+          </a>
         {% endunless %}
+
         <a class="site-title" href="{{ '/' | relative_url }}">
           {{ site.masthead_title | default: site.title | escape_once | strip }}
-          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle | escape_once | strip }}</span>{% endif %}
+          {% if site.subtitle %}
+            <span class="site-subtitle">{{ site.subtitle | escape_once | strip }}</span>
+          {% endif %}
         </a>
+
+        <!-- 상단에 항상 보이는 메뉴 -->
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
@@ -22,26 +29,25 @@
             </li>
           {%- endfor -%}
         </ul>
+
         {% if site.search == true %}
-        <!--돋보기 아이콘 클릭했을 때 search.md로 연결되도록 개조함-->
-        <!-- <a class="search__toggle"
-           href="{{ '/search/' | relative_url }}"
-           aria-label="{{ site.data.ui-text[site.locale].search_label | default: 'Search' }}">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Search" }}</span>
-          <i class="fas fa-search"></i>
-        </a> -->
+        <!-- 검색은 돋보기 아이콘으로 유지 -->
         <a class="search__link"
            href="{{ '/search/' | relative_url }}"
            aria-label="{{ site.data.ui-text[site.locale].search_label | default: 'Search' }}">
-          <!-- <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Search" }}</span> -->
           <i class="fas fa-search"></i>
         </a>
         {% endif %}
+
+        <!-- ⚠️ 여기: 비워둔다!! -->
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
+          <span class="visually-hidden">
+            {{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}
+          </span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
+
       </nav>
     </div>
   </div>
