@@ -51,4 +51,13 @@
   html {
     font-size: 18px !important;  // 기본 16px → 18px 정도
   }
+
+  .greedy-nav .visible-links {
+    display: none !important;
+  }
+
+  /* 혹시 토글 버튼이 숨겨져 있으면 강제로 보이게 */
+  .greedy-nav__toggle {
+    display: block !important;
+  }
 }
