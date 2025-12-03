@@ -73,7 +73,7 @@ body {
   padding-bottom: 0.5em;
   line-height: 1;
   font-family: $sans-serif;
-  font-size: $type-size-4;
+  font-size: $type-size-3;
   color: mix(#fff, $primary-color, 5%);
 
   a {
@@ -95,7 +95,7 @@ body {
   margin: 0.5em 0 0.5em;       // 위·아래 여백
   padding-bottom: 0.5em;       // 아래 여백 + 구분선 간격
   font-family: $sans-serif;
-  font-size: $type-size-4;     // .archive__subtitle 과 동일
+  font-size: $type-size-3;     // .archive__subtitle 과 동일
   font-weight: bold;
   color: mix(#ffffff, $primary-color, 5%); // 홈과 같은 톤
   border-bottom: 1px solid $border-color;   // 구분선 추가
@@ -105,14 +105,14 @@ body {
   margin: 0.5em 0 0.5em;       // 위·아래 여백
   padding-bottom: 0.5em;       // 아래 여백 + 구분선 간격
   font-family: $sans-serif;
-  font-size: $type-size-4;     // .archive__subtitle 과 동일
+  font-size: $type-size-3;     // .archive__subtitle 과 동일
   font-weight: bold;
   color: mix(#ffffff, $primary-color, 5%); // 홈과 같은 톤
 }
 
 .page__lead {
   font-family: $global-font-family;
-  font-size: $type-size-4;
+  font-size: $type-size-3;
 }
 
 .page__content {
