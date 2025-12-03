@@ -744,3 +744,21 @@
     flex-direction: column;
   }
 }
+
+/* 모바일에서도 Prev/Next를 가로 2개로 유지 */
+@media (max-width: 768px) {
+  .post-pagination {
+    display: flex !important;
+    flex-direction: row !important;   /* 세로 → 가로 */
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;                         /* 모바일용 간격 */
+    width: 100%;
+  }
+
+  /* 카드가 너무 크게 세로로 길어지는 것 방지 */
+  .post-pagination .pagination--pager {
+    flex: 1;
+    max-width: 48%;     /* 한 줄에 두 개가 자연스럽게 들어가도록 */
+  }
+}
