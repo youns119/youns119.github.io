@@ -18,6 +18,8 @@
       </div>
     {% endif %}
 
+    <p class="page__meta"><i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%Y.%m.%d" }}</p>
+
     <div>
       <span class="archive__item-title no_toc" itemprop="headline">
         {% if post.link %}
@@ -32,19 +34,17 @@
       </span>
 
       <small>
-        <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>
-        {{ post.date | date: " %Y.%m.%d" }}
-
         {% if site.category_archive.type and post.categories[0]
               and site.tag_archive.type and post.tags[0] %}
           {%- include posts-taxonomy-custom.html -%}
         {% endif %}
       </small>
     </div>
-      {%- if post.excerpt -%}
-        <p class="archive__item-excerpt" itemprop="description">
-          {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
-        </p>
-      {%- endif -%}
+
+    {%- if post.excerpt -%}
+      <p class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+      </p>
+    {%- endif -%}
   </article>
 </div>

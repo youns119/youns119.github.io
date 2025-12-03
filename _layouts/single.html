@@ -116,21 +116,21 @@ layout: default
       {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
       {% if page.id and page.related and site.related_posts.size > 0 %}
         <div class="page__related">
-          <h4 class="page__related-title">{{ "Related" }}</h4>
+          <h4 class="page__related-title">{{ "Related Posts" }}</h4>
             {% for post in site.related_posts limit:10 %}
-              {% include archive-single.html %}
+              {% include archive-single-custom.html %}
             {% endfor %}
         </div>
       {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
       {% elsif page.id and page.related %}
         <div class="page__related">
-          <h4 class="page__related-title">{{ "Related" }}</h4>
+          <h4 class="page__related-title">{{ "Related Posts" }}</h4>
           <div class="grid__wrapper">
             {% for post in site.posts limit:3 %}
               {% if post.id == page.id %}
                 {% continue %}
               {% endif %}
-              {% include archive-single.html type="grid" %}
+              {% include archive-single-custom.html type="grid" %}
             {% endfor %}
           </div>
         </div>
