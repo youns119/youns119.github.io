@@ -52,3 +52,11 @@
     font-size: 18px !important;  // 기본 16px → 18px 정도
   }
 }
+
+/* 모바일에서 프로필 아바타 크게 보이게 */
+@media (max-width: 768px) {
+  .author__avatar {
+    width: 80px;   // 원래 56px 정도라면 조금 키운 값
+    height: 80px;
+  }
+}
