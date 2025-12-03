@@ -76,6 +76,6 @@
 
   /* 모바일에서는 사이드바 아래 패딩 제거 */
   .nav__list {
-    padding-bottom: 0 !important;
+    padding-bottom: -20px !important;
   }
 }
