@@ -51,7 +51,10 @@
   html {
     font-size: 18px !important;  // 기본 16px → 18px 정도
   }
+}
 
+/* 모바일에서는 상단 텍스트 메뉴(visible-links) 숨기고, 햄버거만 사용 */
+@include breakpoint(max-width $large - 1px) {
   .greedy-nav .visible-links {
     display: none !important;
   }
