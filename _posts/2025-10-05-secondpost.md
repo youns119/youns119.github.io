@@ -1,5 +1,5 @@
 ---
-title:  "Secondary"
+title:  "Secondary Secondary Secondary Secondary Secondary Secondary"
 excerpt: "Test용 게시글"
 
 categories:

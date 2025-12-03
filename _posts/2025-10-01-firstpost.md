@@ -1,5 +1,5 @@
 ---
-title:  "First"
+title:  "First First First First First First First"
 excerpt: "첫 블로그 개시 기념 글을 올려보자"
 
 categories:
