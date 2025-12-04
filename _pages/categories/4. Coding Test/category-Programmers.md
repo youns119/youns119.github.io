@@ -1,7 +1,8 @@
 ---
 title: "Programmers"
-permalink: categories/programmers
+permalink: /categories/programmers/
 layout: archive
+breadcrumb: "Programmers"
 author_profile: true
 sidebar_custom: true
 classes: wide

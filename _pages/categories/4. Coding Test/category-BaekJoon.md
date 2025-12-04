@@ -1,7 +1,8 @@
 ---
 title: "BaekJoon"
-permalink: categories/baekjoon
+permalink: /categories/baekjoon/
 layout: archive
+breadcrumb: "BaekJoon"
 author_profile: true
 sidebar_custom: true
 classes: wide

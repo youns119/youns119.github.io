@@ -1,7 +1,8 @@
 ---
 title: "C++"
-permalink: categories/cpp
+permalink: /categories/cpp/
 layout: archive
+breadcrumb: "C++"
 author_profile: true
 sidebar_custom: true
 classes: wide

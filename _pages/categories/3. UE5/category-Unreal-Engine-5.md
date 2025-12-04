@@ -1,7 +1,8 @@
 ---
 title: "Unreal Engine 5"
-permalink: categories/unreal-engine-5
+permalink: /categories/unreal-engine-5/
 layout: archive
+breadcrumb: "Unreal Engine 5"
 author_profile: true
 sidebar_custom: true
 classes: wide

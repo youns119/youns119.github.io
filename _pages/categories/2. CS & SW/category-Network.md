@@ -1,7 +1,8 @@
 ---
 title: "Network"
-permalink: categories/network
+permalink: /categories/network/
 layout: archive
+breadcrumb: "Network"
 author_profile: true
 sidebar_custom: true
 classes: wide

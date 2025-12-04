@@ -1,7 +1,8 @@
 ---
 title: "C#"
-permalink: categories/csharp
+permalink: /categories/csharp/
 layout: archive
+breadcrumb: "C#"
 author_profile: true
 sidebar_custom: true
 classes: wide

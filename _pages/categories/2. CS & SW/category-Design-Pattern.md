@@ -1,7 +1,8 @@
 ---
 title: "Design Pattern"
-permalink: categories/design-pattern
+permalink: /categories/design-pattern/
 layout: archive
+breadcrumb: "Design Pattern"
 author_profile: true
 sidebar_custom: true
 classes: wide
