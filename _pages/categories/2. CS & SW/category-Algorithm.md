@@ -5,7 +5,6 @@ layout: archive
 breadcrumb: "Algorithm"
 author_profile: true
 sidebar_custom: true
-classes: wide
 ---
 
 {% assign posts = site.categories.Algorithm %}

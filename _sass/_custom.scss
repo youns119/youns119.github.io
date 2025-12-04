@@ -47,6 +47,61 @@
   line-height: 1.2;
 }
 
+/* ===== 긴 제목/단어가 레이아웃 뚫고 나가는 것 방지 ===== */
+
+/* 메인 콘텐츠/아카이브/카테고리/태그/브레드크럼 안의 모든 텍스트 */
+.page__content *,
+.page__related *,
+.archive *,
+.taxonomy__index *,
+.taxonomy__section *,
+.breadcrumbs * {
+  overflow-wrap: anywhere;   /* 긴 단어 아무 데서나 줄바꿈 허용 (최신 브라우저) */
+  word-break: break-word;    /* 구형 브라우저 호환용 */
+  white-space: normal;       /* 한 줄 고정 되어 있으면 풀어주기 */
+}
+
+/* 사이드바 (카테고리, 태그, 최근 글 등) */
+.sidebar {
+  overflow-x: hidden;              // 가로 스크롤 제거
+
+  a,
+  .nav__sub-title {
+    white-space: normal;           // 한 줄 고정 해제
+    word-break: break-word;        // 긴 단어도 중간에서 줄바꿈
+    overflow-wrap: anywhere;       // 어디서든 끊어도 됨 (최후의 보루)
+  }
+}
+
+/* 본문 쪽 제목들, 포스트 리스트의 제목들 */
+.page__title,
+.archive__item-title,
+.related-posts .archive__item-title,
+.pagination--pager a {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* breadcrumb (Home / ... / ... / Title) */
+.breadcrumbs,
+.breadcrumbs li,
+.breadcrumbs a,
+.breadcrumbs .current,
+.breadcrumbs .sep {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* 코드 블록에서는 원래대로(가로 스크롤) 유지 */
+pre,
+code,
+pre code {
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 18px !important;  // 기본 16px → 18px 정도

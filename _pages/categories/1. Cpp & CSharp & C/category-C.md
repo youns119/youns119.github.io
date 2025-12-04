@@ -1,11 +1,10 @@
 ---
-title: "C"
+title: "TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest"
 permalink: /categories/c/
 layout: archive
-breadcrumb: "C"
+breadcrumb: "TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest"
 author_profile: true
 sidebar_custom: true
-classes: wide
 ---
 
 {% assign posts = site.categories.C %}

@@ -5,7 +5,6 @@ layout: archive
 breadcrumb: "Design Pattern"
 author_profile: true
 sidebar_custom: true
-classes: wide
 ---
 
 {% assign posts = site.categories['Design Pattern'] %}

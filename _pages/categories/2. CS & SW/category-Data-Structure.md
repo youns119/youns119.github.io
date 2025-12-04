@@ -5,7 +5,6 @@ layout: archive
 breadcrumb: "Data Structure"
 author_profile: true
 sidebar_custom: true
-classes: wide
 ---
 
 {% assign posts = site.categories['Data Structure'] %}
