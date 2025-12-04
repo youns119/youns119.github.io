@@ -47,7 +47,7 @@
         <span class="nav__sub-title">UE5</span>
             <ul>
                 {% assign posts = site.categories['Unreal Engine 5']] | default: '' %}
-                <li><a href="/categories/unreal-Engine-5" class="">Unreal Engine 5 ({{ posts | size }})</a></li>
+                <li><a href="/categories/unreal-engine-5" class="">Unreal Engine 5 ({{ posts | size }})</a></li>
             </ul>
 
         <!-- Coding Test -->
@@ -65,7 +65,7 @@
         <span class="nav__sub-title">ETC</span>
             <ul>
                 {% assign posts = site.categories.Etc] | default: '' %}
-                <li><a href="/categories/etc" class="">ETC ({{ posts | size }})</a></li>
+                <li><a href="/categories/etc" class="">Etc ({{ posts | size }})</a></li>
             </ul>
 
       </li>

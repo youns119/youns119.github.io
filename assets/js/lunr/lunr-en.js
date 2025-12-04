@@ -63,11 +63,16 @@ $(document).ready(function() {
         if (!Array.isArray(cats)) cats = [cats];
 
         cats.forEach(function (cat) {
+          // Jekyll의 slugify 비슷하게 (영문/공백 기준이면 이 정도로 충분)
+          var slug = cat.toLowerCase()
+                        .replace(/[^a-z0-9]+/g, '-')  // 공백/특수문자 → -
+                        .replace(/^-+|-+$/g, '');     // 앞뒤 - 제거
+              
           metaHtml +=
-            ' <a href="/categories/#' + cat +
-            '" class="page__taxonomy-item-category" rel="tag">' +
-              '<span class="label label-category">' + cat + '</span>' +
-            '</a>';
+            ' <a href="{{ site.category_archive.path }}' + slug + '/"'
+            + ' class="page__taxonomy-item-category" rel="tag">'
+            +   '<span class="label label-category">' + cat + '</span>'
+            + '</a>';
         });
       }
 
