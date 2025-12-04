@@ -1,6 +1,6 @@
 ---
 title: "C"
-permalink: Categories/C
+permalink: categories/c
 layout: archive
 author_profile: true
 sidebar_custom: true

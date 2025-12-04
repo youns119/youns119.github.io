@@ -1,6 +1,6 @@
 ---
 title: "ETC"
-permalink: Categories/Etc
+permalink: categories/etc
 layout: archive
 author_profile: true
 sidebar_custom: true

@@ -1,6 +1,6 @@
 ---
 title: "Unreal Engine 5"
-permalink: Categories/Unreal Engine 5
+permalink: categories/unreal-engine-5
 layout: archive
 author_profile: true
 sidebar_custom: true

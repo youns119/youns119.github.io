@@ -8,89 +8,66 @@
             📂 <span style="font-family:'GowunDodum';">Total {{sum}}</style>
       </li>
       <li>
+
+        <!-- C++ / C# / C -->
         <span class="nav__sub-title">C++/C#/C</span>
             <ul>
                 {% assign posts = site.categories.Cpp] | default: '' %}
-                <li><a href="/categories/Cpp" class="">C++ ({{ posts | size }})</a></li>
+                <li><a href="/categories/cpp" class="">C++ ({{ posts | size }})</a></li>
             </ul>
             <ul>
                 {% assign posts = site.categories.CSharp] | default: '' %}
-                <li><a href="/categories/CSharp" class="">C# ({{ posts | size }})</a></li>
+                <li><a href="/categories/csharp" class="">C# ({{ posts | size }})</a></li>
             </ul>
             <ul>
                 {% assign posts = site.categories.C] | default: '' %}
-                <li><a href="/categories/C" class="">C ({{ posts | size }})</a></li>
+                <li><a href="/categories/c" class="">C ({{ posts | size }})</a></li>
             </ul>
 
+        <!-- CS / SW -->
         <span class="nav__sub-title">CS/SW</span>
             <ul>
                 {% assign posts = site.categories.Algorithm] | default: '' %}
-                <li><a href="/categories/Algorithm" class="">Algorithm ({{ posts | size }})</a></li>
+                <li><a href="/categories/algorithm" class="">Algorithm ({{ posts | size }})</a></li>
             </ul>
             <ul>
                 {% assign posts = site.categories['Data Structure']] | default: '' %}
-                <li><a href="/categories/Data Structure" class="">Data Structure ({{ posts | size }})</a></li>
+                <li><a href="/categories/data-structure" class="">Data Structure ({{ posts | size }})</a></li>
             </ul>
             <ul>
                 {% assign posts = site.categories.Network] | default: '' %}
-                <li><a href="/categories/Network" class="">Network ({{ posts | size }})</a></li>
+                <li><a href="/categories/network" class="">Network ({{ posts | size }})</a></li>
             </ul>
             <ul>
                 {% assign posts = site.categories['Design Pattern']] | default: '' %}
-                <li><a href="/categories/Design Pattern" class="">Design Pattern ({{ posts | size }})</a></li>
+                <li><a href="/categories/design-pattern" class="">Design Pattern ({{ posts | size }})</a></li>
             </ul>
 
+        <!-- UE5 -->
         <span class="nav__sub-title">UE5</span>
             <ul>
                 {% assign posts = site.categories['Unreal Engine 5']] | default: '' %}
-                <li><a href="/categories/Unreal Engine 5" class="">Unreal Engine 5 ({{ posts | size }})</a></li>
+                <li><a href="/categories/unreal-Engine-5" class="">Unreal Engine 5 ({{ posts | size }})</a></li>
             </ul>
 
+        <!-- Coding Test -->
         <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% assign posts = site.categories.BaekJoon] | default: '' %}
-                <li><a href="/categories/BaekJoon" class="">BaekJoon ({{ posts | size }})</a></li>
+                <li><a href="/categories/baekjoon" class="">BaekJoon ({{ posts | size }})</a></li>
             </ul>
             <ul>
                 {% assign posts = site.categories.Programmers] | default: '' %}
-                <li><a href="/categories/Programmers" class="">Programmers ({{ posts | size }})</a></li>
+                <li><a href="/categories/programmers" class="">Programmers ({{ posts | size }})</a></li>
             </ul>
 
-        <span class="nav__sub-title">Etc</span>
+        <!-- ETC -->
+        <span class="nav__sub-title">ETC</span>
             <ul>
                 {% assign posts = site.categories.Etc] | default: '' %}
-                <li><a href="/categories/Etc" class="">Etc ({{ posts | size }})</a></li>
+                <li><a href="/categories/etc" class="">ETC ({{ posts | size }})</a></li>
             </ul>
 
-        <span class="nav__sub-title">Test</span>
-            <ul>
-                {% assign posts = site.categories.Test1] | default: '' %}
-                <li><a href="/categories/Test1" class="">Test1 ({{ posts | size }})</a></li>
-            </ul>
-            <ul>
-                {% assign posts = site.categories.Test2] | default: '' %}
-                <li><a href="/categories/Test2" class="">Test2 ({{ posts | size }})</a></li>
-            </ul>
-            <ul>
-                {% assign posts = site.categories.Test3] | default: '' %}
-                <li><a href="/categories/Test3" class="">Test3 ({{ posts | size }})</a></li>
-            </ul>
-            <ul>
-                {% assign posts = site.categories.Test4] | default: '' %}
-                <li><a href="/categories/Test4" class="">Test4 ({{ posts | size }})</a></li>
-            </ul>
-            <ul>
-                {% assign posts = site.categories.Test5] | default: '' %}
-                <li><a href="/categories/Test5" class="">Test5 ({{ posts | size }})</a></li>
-            </ul>
-            <ul>
-                {% assign posts = site.categories.Test6] | default: '' %}
-                <li><a href="/categories/Test6" class="">Test6 ({{ posts | size }})</a></li>
-            </ul>
-            <ul>
-                {% assign posts = site.categories.Test7] | default: '' %}
-                <li><a href="/categories/Test7" class="">Test7 ({{ posts | size }})</a></li>
-            </ul>
       </li>
   </ul>
 </nav>

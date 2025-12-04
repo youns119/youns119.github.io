@@ -1,6 +1,6 @@
 ---
 title: "Network"
-permalink: Categories/Network
+permalink: categories/network
 layout: archive
 author_profile: true
 sidebar_custom: true

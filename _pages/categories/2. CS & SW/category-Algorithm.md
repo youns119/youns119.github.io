@@ -1,6 +1,6 @@
 ---
 title: "Algorithm"
-permalink: Categories/Algorithm
+permalink: categories/algorithm
 layout: archive
 author_profile: true
 sidebar_custom: true

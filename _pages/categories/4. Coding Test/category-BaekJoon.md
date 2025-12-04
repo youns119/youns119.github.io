@@ -1,6 +1,6 @@
 ---
 title: "BaekJoon"
-permalink: Categories/BaekJoon
+permalink: categories/baekjoon
 layout: archive
 author_profile: true
 sidebar_custom: true

@@ -1,6 +1,6 @@
 ---
 title: "Data Structure"
-permalink: Categories/Data Structure
+permalink: categories/data-structure
 layout: archive
 author_profile: true
 sidebar_custom: true

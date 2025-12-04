@@ -1,6 +1,6 @@
 ---
 title: "Design Pattern"
-permalink: Categories/Design Pattern
+permalink: categories/design-pattern
 layout: archive
 author_profile: true
 sidebar_custom: true
