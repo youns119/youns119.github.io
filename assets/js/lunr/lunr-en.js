@@ -69,7 +69,7 @@ $(document).ready(function() {
                         .replace(/^-+|-+$/g, '');     // 앞뒤 - 제거
               
           metaHtml +=
-            ' <a href="{{ site.category_archive.path }}' + slug + '/"'
+            ' <a href="{{ site.category_archive.path }}' + slug +'"'
             + ' class="page__taxonomy-item-category" rel="tag">'
             +   '<span class="label label-category">' + cat + '</span>'
             + '</a>';
