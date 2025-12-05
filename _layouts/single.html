@@ -82,24 +82,58 @@ layout: default
         {% if page.share %}{% include social-share.html %}{% endif %}
       </footer>
 
-      {% if page.previous or page.next %}
+      <!-- 같은 카테고리 안에서만 prev/next 찾기 -->
+      {%- assign prev_post_in_cat = nil -%}
+      {%- assign next_post_in_cat = nil -%}
+
+      {%- if page.categories and page.categories.size > 0 -%}
+        {%- assign current_category = page.categories[0] -%}
+        {%- assign cat_posts = site.categories[current_category] -%}
+
+        {%- assign current_index = nil -%}
+        {%- for p in cat_posts -%}
+          {%- if p.url == page.url -%}
+            {%- assign current_index = forloop.index0 -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- if current_index != nil -%}
+          {%- assign last_index = cat_posts.size | minus: 1 -%}
+
+          {%- if current_index > 0 -%}
+            {%- assign prev_index = current_index | minus: 1 -%}
+            {%- assign prev_post_in_cat = cat_posts[prev_index] -%}
+          {%- endif -%}
+
+          {%- if current_index < last_index -%}
+            {%- assign next_index = current_index | plus: 1 -%}
+            {%- assign next_post_in_cat = cat_posts[next_index] -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      <!-- 카테고리 안에서 못 찾으면 기존 전체 prev/next 로 fallback -->
+      {%- assign prev_post = prev_post_in_cat -%}
+      {%- assign next_post = next_post_in_cat -%}
+      {% if prev_post or next_post %}
         <div class="post-pagination-wrapper">
           <div class="post-pagination">
-            {% if page.previous %}
-              <a class="pagination--pager previous" href="{{ page.previous.url | relative_url }}">
+            {% if prev_post %}
+              <a class="pagination--pager previous" href="{{ prev_post.url | relative_url }}">
                 <div>
                   <span class="pagination__label">Prev</span>
-                  <span class="pagination__title">{{ page.previous.title }}</span>
+                  <span class="pagination__title">{{ prev_post.title }}</span>
                 </div>
               </a>
             {% else %}
               <div class="pagination--pager placeholder"></div>
             {% endif %}
-            {% if page.next %}
-              <a class="pagination--pager next" href="{{ page.next.url | relative_url }}">
+
+            {% if next_post %}
+              <a class="pagination--pager next" href="{{ next_post.url | relative_url }}">
                 <div>
                   <span class="pagination__label">Next</span>
-                  <span class="pagination__title">{{ page.next.title }}</span>
+                  <span class="pagination__title">{{ next_post.title }}</span>
                 </div>
               </a>
             {% else %}
