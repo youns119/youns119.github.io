@@ -13,7 +13,7 @@
         <span class="nav__sub-title">C++/C#/C</span>
             <ul>
                 {% assign posts = site.categories.Cpp] | default: '' %}
-                <li><a href="/categories/cpp" class="">TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest ({{ posts | size }})</a></li>
+                <li><a href="/categories/cpp" class="">C++ ({{ posts | size }})</a></li>
             </ul>
             <ul>
                 {% assign posts = site.categories.CSharp] | default: '' %}

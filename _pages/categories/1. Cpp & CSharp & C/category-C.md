@@ -1,8 +1,8 @@
 ---
-title: "TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest"
+title: "C"
 permalink: /categories/c/
 layout: archive
-breadcrumb: "TestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTestTest"
+breadcrumb: "C"
 author_profile: true
 sidebar_custom: true
 ---

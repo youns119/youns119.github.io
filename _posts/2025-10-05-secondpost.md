@@ -1,5 +1,5 @@
 ---
-title:  "FirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirst"
+title:  "Second"
 excerpt: "Test용 게시글"
 
 categories:
