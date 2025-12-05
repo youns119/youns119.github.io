@@ -183,7 +183,7 @@
 
   /* 제목 ↔ excerpt 간 간격 */
   .results .archive__item-excerpt {
-    margin-top: -0.3em;      // 제목 아래 여백
+    margin-top: 0em;      // 제목 아래 여백
     margin-bottom: 0;
     font-size: $type-size-6;
   }
