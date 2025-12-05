@@ -94,6 +94,14 @@
   overflow-wrap: anywhere;
 }
 
+/* Fix taxonomy spacing for tags & categories */
+.page__taxonomy-item-tag,
+.page__taxonomy-item-category {
+  display: inline-block;   /* inline → inline-block 으로 변경 */
+  margin-right: 5px;
+  margin-bottom: 5px;       /* 줄 사이 간격 */
+}
+
 /* 코드 블록에서는 원래대로(가로 스크롤) 유지 */
 pre,
 code,
