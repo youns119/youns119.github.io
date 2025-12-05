@@ -102,6 +102,10 @@
   margin-bottom: 5px;       /* 줄 사이 간격 */
 }
 
+.page__related .list__item {
+  margin-bottom: 0.1rem;
+}
+
 /* 코드 블록에서는 원래대로(가로 스크롤) 유지 */
 pre,
 code,

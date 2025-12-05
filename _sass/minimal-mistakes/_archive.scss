@@ -131,7 +131,7 @@
 
 .list__item {
   font-family: $sans-serif;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.1rem;
 
   .page__meta {
     margin: 4 0 4px;
@@ -443,6 +443,6 @@
 
 .layout--categories .entries-list > .archive-item,
 .layout--tags .entries-list > .archive-item {
-  margin-bottom: 0.4rem !important;
+  margin-bottom: 0.1rem !important;
   font-family: $sans-serif;
 }
