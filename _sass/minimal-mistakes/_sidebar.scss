@@ -178,7 +178,7 @@
 
 .author__bio {
   margin: 0;
-  font-size: 0.9em; // 프로필 소개문 폰트 사이즈 및 이탈릭체
+  font-size: 1em; // 프로필 소개문 폰트 사이즈 및 이탈릭체
   font-style: italic;
 
   @include breakpoint($large) {

@@ -2,7 +2,7 @@
 
 .sidebar .author__urls a,
 .sidebar .author__urls li.author__location {
-  font-size: 0.9em;       /* 글자 크기 줄임 */
+  font-size: 1em;       /* 글자 크기 줄임 */
   line-height: 1.2;       /* 줄 간격 압축 */
   margin-bottom: 2px;     /* 항목 간 간격 줄임 */
   padding-block: 0;       /* 위아래 패딩 제거 */
@@ -43,7 +43,7 @@
 /* 실제 "South Korea" 텍스트(span.p-locality)에 폰트 적용 */
 .sidebar .author__urls li[itemprop="homeLocation"] .p-locality,
 .sidebar .author__urls li[itemprop="homeLocation"] [itemprop="name"] {
-  font-size: 0.9em !important;
+  font-size: 1em !important;
   line-height: 1.2;
 }
 
@@ -112,6 +112,12 @@ code,
 pre code {
   word-break: normal;
   overflow-wrap: normal;
+}
+
+// 인용문 간격 조절
+blockquote {
+  margin-left: 0.5em;
+  padding-left: 1em;
 }
 
 @media (max-width: 768px) {

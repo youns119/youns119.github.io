@@ -36,7 +36,9 @@ h6 {
 }
 
 h1 {
+  color: mix(#ffffff, $primary-color, 30%);
   margin-top: 0;
+  margin-bottom: 1em;
   font-size: $h-size-1m;
 }
 
@@ -45,6 +47,7 @@ h2 {
 }
 
 h3 {
+  margin-bottom: 1em;
   font-size: $h-size-3;
 }
 
@@ -72,7 +75,8 @@ p {
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid $text-color;
+  border-bottom: 2px solid $primary-color;
+  padding-bottom: 3.5px;
   a {
     color: inherit;
   }
@@ -163,6 +167,25 @@ pre {
 
 pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
+}
+
+p > code,
+a > code,
+li > code,
+figcaption > code,
+td > code {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-size: 1em;
+  background: $code-background-color;
+  color: $primary-color;
+  border-radius: $border-radius;
+
+  &:before,
+  &:after {
+    letter-spacing: -0.2em;
+    content: "\00a0"; /* non-breaking space*/
+  }
 }
 
 /* horizontal rule */
