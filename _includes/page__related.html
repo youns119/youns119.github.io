@@ -1,45 +1,68 @@
-{% raw %}{% if page.related_posts and page.related_posts != empty %}
-<div class="page__related">
-  <h2 class="page__related-title">
-    {{ site.data.ui-text[site.locale].you_may_also_enjoy | default: "Related Posts" }}
-  </h2>
+<!-- Related posts by category/tag overlap.
+- 카테고리 겹치면 +2점
+- 태그 겹치면 +1점
+점수 높은 순으로 정렬해서 위에서부터 최대 10개까지 출력 -->
 
-  <ul class="related-list">
-    {% for post in page.related_posts limit: 10 %}
-      <li class="related-list__item">
+{% if page.id and page.related and site.posts %}
+  {% assign scored = "" | split: "" %}
 
-        <!-- 날짜 -->
-        <span class="related-list__date">
-          {{ post.date | date: "%Y.%m.%d" }}
-        </span>
+  {% for candidate in site.posts %}
+    {% if candidate.id != page.id %}
+      {% assign score = 0 %}
 
-        <!-- 제목 -->
-        <a class="related-list__title" href="{{ post.url | relative_url }}">
-          {{ post.title }}
-        </a>
+      <!-- 카테고리 일치 점수 -->
+      {% if page.categories and candidate.categories %}
+        {% for cat in candidate.categories %}
+          {% if page.categories contains cat %}
+            {% assign score = score | plus: 2 %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
 
-        <!-- 카테고리 -->
-        {% if post.categories %}
-          {% for category in post.categories %}
-            <a href="{{ '/categories/#' | append: category | relative_url }}"
-               class="page__taxonomy-item-category">
-              {{ category }}
-            </a>
-          {% endfor %}
+      <!-- 태그 일치 점수 -->
+      {% if page.tags and candidate.tags %}
+        {% for tag in candidate.tags %}
+          {% if page.tags contains tag %}
+            {% assign score = score | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      <!-- 점수가 1점 이상인 포스트만 후보에 넣기.
+      문자열 "점수|||URL" 형태로 저장해서 나중에 sort. -->
+      {% if score > 0 %}
+        {% assign score_str = score | prepend: "000" %}
+        <!-- 항상 3자리로 패딩 -->
+        {% assign score_str = score_str | slice: -3, 3 %}
+
+        {% capture packed %}{{ score_str }}|||{{ candidate.url }}{% endcapture %}
+        {% assign scored = scored | push: packed %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- score_str(000~999)을 앞에 붙였기 때문에
+  sort → 오름차순, reverse → 내림차순(점수 높은 것부터) -->
+  {% assign scored = scored | sort | reverse %}
+
+  {% if scored.size > 0 %}
+    <div class="page__related">
+      <h4 class="page__related-title">
+        {{ site.data.ui-text[site.locale].you_may_also_enjoy | default: "Related Posts" }}
+      </h4>
+
+      {% for item in scored limit: 10 %}
+        {% assign parts = item | split: "|||" %}
+        {% assign url = parts[1] %}
+        {% assign post = site.posts | where: "url", url | first %}
+
+        {% if post %}
+          <!-- 여기서 archive-single-custom.html 은
+          루프 변수 이름이 post 인 걸 기대하니까
+          그냥 include만 해주면 됨. -->
+          {% include archive-single-custom.html %}
         {% endif %}
-
-        <!-- 태그 -->
-        {% if post.tags %}
-          {% for tag in post.tags %}
-            <a href="{{ '/tags/#' | append: tag | relative_url }}"
-               class="page__taxonomy-item-tag">
-              {{ tag }}
-            </a>
-          {% endfor %}
-        {% endif %}
-
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-{% endif %}{% endraw %}
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endif %}
