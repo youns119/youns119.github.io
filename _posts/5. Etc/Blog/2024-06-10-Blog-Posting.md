@@ -80,7 +80,7 @@ last_modified_at: 2024-06-11
 
 - `excerpt` : <u><strong>포스트의 간략 설명 글.</strong></u> 밑의 사진처럼 포스트의 제목 아래에 뜨는 부분이다. 나는 현재 블로그 커스터마이징을 해서 Home, Search 화면에서만 뜨게끔 설정해 놓았다.
 
-![excerpt](https://github.com/user-attachments/assets/df4e8164-f6f8-4ac2-84c1-19a55ce74f98){: .align-center}
+![excerpt]({{ "/assets/images/posts/ETC/Blog/2024-06-10-Blog-Posting/excerpt.png" | relative_url }}){: .align-center}
 
 - `categories` : <u><strong>현재 포스트의 카테고리.</strong></u> 지금 이 포스트의 카테고리는 `Blog`이고 이 카테고리에 따라 사이드바의 카테고리 칸에 포스트가 저장되며, `Category` 페이지에서도 이에 따라 정렬된다.
 
@@ -88,7 +88,7 @@ last_modified_at: 2024-06-11
 
 - `toc` : <u><strong>Table Of Contents</strong></u>의 줄임말로, true로 해놓으면 현재 포스트의 모든 목차를 보여주게 된다. 딱히 필요 없으면 false로 해놓으면 된다.
 
-![toc](https://github.com/user-attachments/assets/652717cd-55cf-412c-86d8-9863b409b6ce){: .align-center}
+![image]({{ "/assets/images/posts/ETC/Blog/2024-06-10-Blog-Posting/toc.png" | relative_url }}){: .align-center}
 
 - `toc_sticky` : <u><strong>toc의 sticky 여부.</strong></u> 간략히 말하자면 이걸 true로 해놓으면 오른쪽의 toc이 스크롤을 움직임에 따라 같이 따라온다. 
 
