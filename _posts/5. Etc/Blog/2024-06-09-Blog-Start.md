@@ -1,5 +1,5 @@
 ---
-title:  "[Blog] Github Blog 완성"
+title: "[Blog] Github Blog 완성"
 excerpt: "Github Blog 도전기"
 
 categories:

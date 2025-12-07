@@ -9,8 +9,8 @@ $primary-color: #E5BA71 !default; // primary-color 색상 (뭐 여러데에 쓰�
 $secondary-color: #CA9CE1 !default; // secondary-color 색상 (내 커스텀 색상)
 $third-color: #A6D189 !default; // third-color 색상
 $border-color: mix(#fff, $background-color, 20%) !default;
-$code-background-color: mix(#000, $background-color, 15%) !default;
-$code-background-color-dark: mix(#000, $background-color, 20%) !default;
+$code-background-color: #4D5357 !default;
+$code-background-color-dark: #3F4447 !default;
 $form-background-color: mix(#000, $background-color, 15%) !default;
 $footer-background-color: mix(#000, $background-color, 20%) !default;
 $link-color: mix(#4EC9B0, $text-color, 50%) !default;  // 링크 색상 (앞의 default : $primary-color)
