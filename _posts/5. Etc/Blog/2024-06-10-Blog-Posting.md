@@ -10,8 +10,8 @@ tags:
 toc: true
 toc_sticky: true
  
-date: 2024-06-11
-last_modified_at: 2024-06-11
+date: 2024-06-10
+last_modified_at: 2024-06-10
 ---
 
 # 📘 블로그 포스팅
