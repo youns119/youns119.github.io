@@ -5,7 +5,7 @@ excerpt: "Github Blog에 포스팅하는 방법"
 categories:
   - Blog
 tags:
-  - [Blog, Github]
+  - [Blog, Github, Etc]
 
 toc: true
 toc_sticky: true

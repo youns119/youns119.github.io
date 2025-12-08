@@ -5,7 +5,7 @@ excerpt: "Github Blog 도전기"
 categories:
   - Blog
 tags:
-  - [Blog, Github]
+  - [Blog, Github, Etc]
 
 toc: true
 toc_sticky: true
