@@ -36,17 +36,19 @@ h6 {
 }
 
 h1 {
-  color: mix(#ffffff, $primary-color, 30%);
+  color: mix(#ffffff, $primary-color, 15%);
   margin-top: 0;
   margin-bottom: 1em;
   font-size: $h-size-1m;
 }
 
 h2 {
+  color: mix(#ffffff, $primary-color, 50%);
   font-size: $h-size-2;
 }
 
 h3 {
+  color: mix(#ffffff, $third-color, 60%);
   margin-bottom: 1em;
   font-size: $h-size-3;
 }

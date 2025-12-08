@@ -119,6 +119,22 @@ blockquote {
   padding-left: 1em;
 }
 
+.toc {
+  .toc__menu {
+    > li > a {
+      color: mix(#ffffff, $primary-color, 15%);
+    }
+
+    > li > ul > li > a {
+      color: mix(#ffffff, $primary-color, 50%);
+    }
+
+    > li > ul > li > ul > li > a {
+      color: mix(#ffffff, $third-color, 60%);
+    }
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 18px !important;  // 기본 16px → 18px 정도
