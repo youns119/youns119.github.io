@@ -16,6 +16,7 @@ last_modified_at: 2024-06-11
 
 Github Blog는 포스팅 할 때 지켜야할 문법이나 규칙들이 꽤나 많다. 익숙해지면 포스팅도 금방금방 하게 되지만, 가끔씩 잘 안 쓰는 문법은 까먹어서 다시 인터넷을 뒤져보거나 하는 경우가 있다. 그래서 좀 전체적으로 정리해 놓으면 내가 보기 좋지 않을까 싶어 올리는 포스트!
 
+---
 # 📚 문법
 
 블로그에 포스팅 할 때는 주로 `Markdown`, `HTML`, `KAL` 등을 자주 쓴다. 따라서 이를 중심으로 설명할 것이다.
@@ -611,6 +612,7 @@ $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$
 - [Flow Charts](https://flowchart.js.org/)
 - [Sequence Diagrams](https://bramp.github.io/js-sequence-diagrams/)
 
+---
 # 💭 그 외
 
 이 외에도 찾아보면 쓸만한 문법들이나 기능들이 꽤나 많다. 특히나 `KAL(Kramdown Attribute List)` 문법이라고 `jekyll theme` 에서 `Markdown`과 연계하는 문법 중에 쓸만한 기능들이 꽤나 많으니 잘 찾아보면 좋을 것 같다. 상기한 문법들은 거의 자주 쓰이는 문법들만 정리해 놓았으니 이것만 기억해놔도 충분할지도?
