@@ -64,6 +64,10 @@
         <!-- ETC -->
         <span class="nav__sub-title">ETC</span>
             <ul>
+                {% assign posts = site.categories.Github] | default: '' %}
+                <li><a href="/categories/github" class="">Github ({{ posts | size }})</a></li>
+            </ul>
+            <ul>
                 {% assign posts = site.categories.Blog] | default: '' %}
                 <li><a href="/categories/blog" class="">Blog ({{ posts | size }})</a></li>
             </ul>
