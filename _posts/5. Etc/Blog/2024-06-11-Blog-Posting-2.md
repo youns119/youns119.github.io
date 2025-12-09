@@ -367,20 +367,20 @@ public class A
 말 그대로 링크 자체만 띡하고 올리는 방법.
 
 ```
-<https://github.com/youns119>
+- <https://github.com/youns119>
 ```
 
-<https://github.com/youns119>
+- <https://github.com/youns119>
 
 ### 2. inline 링크 + 설명
 
 설명까지 첨부한 inline 링크.
 
 ```
-[내 깃헙 페이지](https://github.com/youns119)
+- [내 깃헙 페이지](https://github.com/youns119)
 ```
 
-[내 깃헙 페이지](https://github.com/youns119)
+- [내 깃헙 페이지](https://github.com/youns119)
 
 ### 3. 페이지 내 문단 이동 링크
 
@@ -392,18 +392,18 @@ public class A
 4. 앞에 `#` 추가.
 
 ```
-[순서 없는 목록](#순서-없는-목록-unordered-list)
+- [순서 없는 목록](#순서-없는-목록-unordered-list)
 ```
 
-[순서 없는 목록](#순서-없는-목록-unordered-list)
+- [순서 없는 목록](#순서-없는-목록-unordered-list)
 
 이를 활용해서 다른 페이지의 문단으로 이동도 가능하다.
 
 ```
-[참고자료](https://youns119.github.io/blog/Blog-Start/#-참고자료)
+- [참고자료](https://youns119.github.io/blog/Blog-Start/#-참고자료)
 ```
 
-[참고자료](https://youns119.github.io/blog/Blog-Start/#-참고자료)
+- [참고자료](https://youns119.github.io/blog/Blog-Start/#-참고자료)
 
 ### 4. 이미지 링크
 
