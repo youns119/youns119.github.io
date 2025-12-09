@@ -34,7 +34,7 @@ Github 페이지로 들어가서 `New` 버튼을 눌러 새로운 `Repo`를 생�
 
 ### 1. 헤더
 
-![Issue]({{ "/assets/images/posts/ETC/Blog/2024-06-15-Github-Custom/header.png" | relative_url }}){: .align-center}
+![Issue]({{ "/assets/images/posts/ETC/Blog/2024-06-15-Github-Custom/Header.png" | relative_url }}){: .align-center}
 
 위의 이미지처럼 일종의 현수막 같은 그래픽화된 `헤더`를 추가해준다. 
 
