@@ -24,7 +24,7 @@ Github Blog를 만들기 전에 했던 것이 있다. 바로 **<u>Github 홈 프
 
 Github 페이지로 들어가서 `New` 버튼을 눌러 새로운 `Repo`를 생성해준다. 이 때 Repo의 이름은 본인의 Github 아이디 이름과 같아야 하고, 당연히 외부에 보여줄 것이기 때문에 `public` 으로 설정, `Add README` 옵션을 켜준다. 그러면 내 Github 아이디와 동일한 이름의 새로운 Repo가 생성되고, 내부엔 `README.md` 파일만이 존재한다.
 
-![Issue]({{ "/assets/images/posts/ETC/Blog/2024-06-15-Github-Custom/Readme.png" | relative_url }}){: .align-center}
+![Issue]({{ "/assets/images/posts/ETC/Github/2024-06-15-Github-Custom/Readme.png" | relative_url }}){: .align-center}
 
 이제 이 `README.md` 파일에 내 Github 홈 페이지에 보여줄 **<u>하나의 소개서 역할</u>**을 하게 된다.
 
@@ -34,7 +34,7 @@ Github 페이지로 들어가서 `New` 버튼을 눌러 새로운 `Repo`를 생�
 
 ### 1. 헤더
 
-![Issue]({{ "/assets/images/posts/ETC/Blog/2024-06-15-Github-Custom/Header.png" | relative_url }}){: .align-center}
+![Issue]({{ "/assets/images/posts/ETC/Github/2024-06-15-Github-Custom/Header.png" | relative_url }}){: .align-center}
 
 위의 이미지처럼 일종의 현수막 같은 그래픽화된 `헤더`를 추가해준다. 
 
@@ -53,7 +53,7 @@ Github 페이지로 들어가서 `New` 버튼을 눌러 새로운 `Repo`를 생�
 
 ### 2. 기술 배지
 
-![Issue]({{ "/assets/images/posts/ETC/Blog/2024-06-15-Github-Custom/Stack.png" | relative_url }}){: .align-center}
+![Issue]({{ "/assets/images/posts/ETC/Github/2024-06-15-Github-Custom/Stack.png" | relative_url }}){: .align-center}
 
 이렇게 내가 가진 `기술 스택`들을 배지 형태로 아이콘화하여 출력해준다. 그냥 텍스트로 나열하는 것보다 가시성이 좋고, 정렬해 놓으면 예뻐 보인다.
 
@@ -76,9 +76,9 @@ Github 페이지로 들어가서 `New` 버튼을 눌러 새로운 `Repo`를 생�
 
 ### 3. 통계
 
-![Issue]({{ "/assets/images/posts/ETC/Blog/2024-06-15-Github-Custom/Stat_1.png" | relative_url }}){: .align-center}
+![Issue]({{ "/assets/images/posts/ETC/Github/2024-06-15-Github-Custom/Stat_1.png" | relative_url }}){: .align-center}
 
-![Issue]({{ "/assets/images/posts/ETC/Blog/2024-06-15-Github-Custom/Stat_2.png" | relative_url }}){: .align-center}
+![Issue]({{ "/assets/images/posts/ETC/Github/2024-06-15-Github-Custom/Stat_2.png" | relative_url }}){: .align-center}
 
 위와 같이 나의 Github에 있는 `Repo`들에서 쓰이는 언어의 비율이나 Github 활동 기록을 수치화 및 그래프화해서 보기 좋게 만들어준다.
 
@@ -113,3 +113,9 @@ Github 페이지로 들어가서 `New` 버튼을 눌러 새로운 `Repo`를 생�
 
 참고로 이미지 삽입의 `Issue` 활용 방식으로 하면 쉽다. Github 홈 페이지의 README.md 파일은 **<u>외부 사이트로 인식하지 않기 때문에 정상 작동할 것이다.</u>**
 {: .notice--info}
+
+## ➕ 추가
+
+혹시 몰라 유용한 이모지들을 찾는 사람이 있다면 이 사이트를 참고하면 좋을 것이다.
+
+- [유용한 이모지 모음](https://gist.github.com/rxaviers/7360908)
