@@ -5,7 +5,7 @@ excerpt: "최대공약수, 최소공배수에 대해 알아보자"
 categories:
   - Algorithm
 tags:
-  - [Algorithm, GCD, LCM]
+  - [Algorithm, GCD, LCM, Euclidean algorithm]
 
 toc: true
 toc_sticky: true
