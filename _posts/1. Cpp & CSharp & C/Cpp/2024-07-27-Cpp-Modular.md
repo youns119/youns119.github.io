@@ -1,5 +1,5 @@
 ---
-title:  "[C++] Modular (%) 연산에 대해서"
+title:  "[C++] Modular (나머지) 연산에 대해서"
 excerpt: "C++에서 Moduar 연산에 대해서 알아보자"
 
 categories:
