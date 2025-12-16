@@ -121,7 +121,7 @@ layout: default
             {% if prev_post %}
               <a class="pagination--pager previous" href="{{ prev_post.url | relative_url }}">
                 <div>
-                  <span class="pagination__label">Prev</span>
+                  <span class="pagination__label">Next</span>
                   <span class="pagination__title">{{ prev_post.title }}</span>
                 </div>
               </a>
@@ -132,7 +132,7 @@ layout: default
             {% if next_post %}
               <a class="pagination--pager next" href="{{ next_post.url | relative_url }}">
                 <div>
-                  <span class="pagination__label">Next</span>
+                  <span class="pagination__label">Prev</span>
                   <span class="pagination__title">{{ next_post.title }}</span>
                 </div>
               </a>
