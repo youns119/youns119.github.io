@@ -135,6 +135,11 @@ blockquote {
   }
 }
 
+// MathJax 폰트 사이즈 조절
+.MathJax {
+  font-size: 0.8em;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 18px !important;  // 기본 16px → 18px 정도

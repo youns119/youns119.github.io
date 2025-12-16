@@ -1,5 +1,5 @@
 ---
-title:  "[Algorithm] 이분 탐색 알고리즘"
+title:  "[Algorithm] Binary Search (이분 탐색) 알고리즘"
 excerpt: "이분 탐색 알고리즘에 대해 알아보자"
 
 categories:

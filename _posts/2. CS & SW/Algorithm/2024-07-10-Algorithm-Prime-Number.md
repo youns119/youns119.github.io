@@ -1,5 +1,5 @@
 ---
-title:  "[Algorithm] 소수 판별 알고리즘"
+title:  "[Algorithm] Prime Number (소수) 판별 알고리즘"
 excerpt: "소수 판별 알고리즘에 대해 알아보자"
 
 categories:
