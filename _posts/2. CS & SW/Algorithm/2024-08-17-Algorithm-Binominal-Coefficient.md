@@ -5,7 +5,7 @@ excerpt: "이항 계수에 대해 알아보자"
 categories:
   - Algorithm
 tags:
-  - [Algorithm, Mathematics, Binominal Coefficient, Dynamic Programming]
+  - [Algorithm, Mathematics, Combinatorics, Binominal Coefficient, Dynamic Programming]
 
 toc: true
 toc_sticky: true
