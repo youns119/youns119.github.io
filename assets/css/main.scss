@@ -10,7 +10,7 @@ search: false
 $monospace: Consolas, ui-monospace, SFMono-Regular, Menlo, Monaco, "Liberation Mono", "Lucida Console", "Courier New", monospace;
 $sans-serif: "GowunDodum", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $serif: "GyeonggiMillenniumBackground", Georgia, Times, serif;
-$font-custom: "ChangwonDangamRounded";
+$font-custom: "MaruBuri";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

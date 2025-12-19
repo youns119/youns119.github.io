@@ -132,6 +132,10 @@ blockquote {
     > li > ul > li > ul > li > a {
       color: mix(#ffffff, $third-color, 60%);
     }
+
+    > li > ul > li > ul > li > ul > li > a {
+      color: mix(#ffffff, $secondary-color, 60%);
+    }
   }
 }
 

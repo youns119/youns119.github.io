@@ -51,6 +51,8 @@ last_modified_at: 2024-06-16
 
 하지만 강의는 유로라서 돈을 내야 한다. 내가 추천하는 방법은 강의를 듣는게 아니라 **<u>각 강의 페이지로 들어가서 나와 있는 알고리즘 별 문제들을 푸는 것</u>**이다. 초급부터 고급까지 알고리즘별로 추천 문제들이 있어서 알고리즘 공부에 아주 좋다.
 
+---
+
 ### 2. 프로그래머스
 
 #### - 알고리즘 고득점 Kit
@@ -73,6 +75,8 @@ last_modified_at: 2024-06-16
 
 도저히 뭘 풀어야할지 모를 때 이용하면 소소하게 도움이 된다.
 
+---
+
 ### 3. 코드 업
 
 [코드 업](https://codeup.kr/problemsetsol.php)
@@ -82,6 +86,8 @@ last_modified_at: 2024-06-16
 ![Codeup_Problems]({{ "/assets/images/posts/ETC/Etc/2024-06-16-Etc-Coding-Test-Tip/Codeup_Problems.png" | relative_url }}){: .align-center}
 
 여기에서는 `기초 입출력`부터 `Union-Find` 같은 고급 알고리즘까지 각 알고리즘별 추천 문제들이 모여 있다.
+
+---
 
 ### 4. solved.ac
 
@@ -104,6 +110,8 @@ last_modified_at: 2024-06-16
 여기서 낮은 레이팅 순서로 태그를 찾아서 우선적으로 풀면 **<u>나의 약한 알고리즘에 대한 보충</u>**을 하기에 좋다. 태그 페이지는 밑의 링크로 가면 된다.
 
 [solved.ac-Tag](https://solved.ac/problems/tags)
+
+---
 
 ### 5. 랜덤 문제
 
