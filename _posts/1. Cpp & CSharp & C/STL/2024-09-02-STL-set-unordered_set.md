@@ -5,7 +5,7 @@ excerpt: "STL - set, unordered_set에 대해 알아보자"
 categories:
   - STL
 tags:
-  - [STL, set, unordered_set, Cpp]
+  - [STL, Cpp, set, unordered_set]
 
 toc: true
 toc_sticky: true

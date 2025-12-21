@@ -5,7 +5,7 @@ excerpt: "STL - unique 함수에 대해 알아보자"
 categories:
   - STL
 tags:
-  - [STL, unique, Cpp]
+  - [STL, Cpp, unique]
 
 toc: true
 toc_sticky: true

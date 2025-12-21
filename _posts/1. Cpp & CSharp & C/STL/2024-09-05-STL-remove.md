@@ -5,7 +5,7 @@ excerpt: "STL - remove 함수에 대해 알아보자"
 categories:
   - STL
 tags:
-  - [STL, remove, Cpp]
+  - [STL, Cpp, remove]
 
 toc: true
 toc_sticky: true

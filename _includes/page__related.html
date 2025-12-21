@@ -1,49 +1,56 @@
 <!-- Related posts by category/tag overlap.
 - 카테고리 겹치면 +2점
 - 태그 겹치면 +1점
-점수 높은 순으로 정렬해서 위에서부터 최대 10개까지 출력 -->
+점수 높은 순으로 정렬해서 위에서부터 최대 10개까지 출력
+
+정확도 손실 없음:
+- site.posts 전체를 모두 후보로 평가
+- 점수 규칙 동일
+
+성능 개선:
+- 후보 전체를 다 모아놓고 마지막에 sort하지 않고,
+  Top-10만 유지하도록 매번 잘라서 관리
+- url 대신 id 사용(안정성 개선)
+-->
 
 {% if page.id and page.related and site.posts %}
   {% assign scored = "" | split: "" %}
+
+  {% assign page_cats = page.categories | default: "" %}
+  {% assign page_tags = page.tags | default: "" %}
 
   {% for candidate in site.posts %}
     {% if candidate.id != page.id %}
       {% assign score = 0 %}
 
       <!-- 카테고리 일치 점수 -->
-      {% if page.categories and candidate.categories %}
+      {% if page_cats != "" and candidate.categories %}
         {% for cat in candidate.categories %}
-          {% if page.categories contains cat %}
+          {% if page_cats contains cat %}
             {% assign score = score | plus: 2 %}
           {% endif %}
         {% endfor %}
       {% endif %}
 
       <!-- 태그 일치 점수 -->
-      {% if page.tags and candidate.tags %}
+      {% if page_tags != "" and candidate.tags %}
         {% for tag in candidate.tags %}
-          {% if page.tags contains tag %}
+          {% if page_tags contains tag %}
             {% assign score = score | plus: 1 %}
           {% endif %}
         {% endfor %}
       {% endif %}
 
-      <!-- 점수가 1점 이상인 포스트만 후보에 넣기.
-      문자열 "점수|||URL" 형태로 저장해서 나중에 sort. -->
       {% if score > 0 %}
-        {% assign score_str = score | prepend: "000" %}
-        <!-- 항상 3자리로 패딩 -->
-        {% assign score_str = score_str | slice: -3, 3 %}
+        {%- assign score_str = score | prepend: "000" | slice: -3, 3 -%}
+        {%- capture packed -%}{{ score_str }}|||{{ candidate.id }}{%- endcapture -%}
 
-        {% capture packed %}{{ score_str }}|||{{ candidate.url }}{% endcapture %}
+        <!-- 후보 추가 후 Top-10만 유지 -->
         {% assign scored = scored | push: packed %}
+        {% assign scored = scored | sort | reverse | slice: 0, 10 %}
       {% endif %}
     {% endif %}
   {% endfor %}
-
-  <!-- score_str(000~999)을 앞에 붙였기 때문에
-  sort → 오름차순, reverse → 내림차순(점수 높은 것부터) -->
-  {% assign scored = scored | sort | reverse %}
 
   {% if scored.size > 0 %}
     <div class="page__related">
@@ -51,15 +58,13 @@
         {{ site.data.ui-text[site.locale].you_may_also_enjoy | default: "Related Posts" }}
       </h4>
 
-      {% for item in scored limit: 10 %}
+      {% for item in scored %}
         {% assign parts = item | split: "|||" %}
-        {% assign url = parts[1] %}
-        {% assign post = site.posts | where: "url", url | first %}
+        {% assign id = parts[1] %}
+        {% assign post = site.posts | where: "id", id | first %}
 
         {% if post %}
-          <!-- 여기서 archive-single-custom.html 은
-          루프 변수 이름이 post 인 걸 기대하니까
-          그냥 include만 해주면 됨. -->
+          <!-- archive-single-custom.html은 루프 변수 post를 기대 -->
           {% include archive-single-custom.html %}
         {% endif %}
       {% endfor %}

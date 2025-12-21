@@ -5,7 +5,7 @@ excerpt: "STL - vector에 대해 알아보자"
 categories:
   - STL
 tags:
-  - [STL, vector, Cpp]
+  - [STL, Cpp, vector]
 
 toc: true
 toc_sticky: true
