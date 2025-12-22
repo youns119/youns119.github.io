@@ -1,5 +1,5 @@
 ---
-title:  "[Algorithm] Two Pointer (투 포인터) vs Sliding Window (슬라이딩 윈도우)"
+title:  "[Algorithm] Two Pointer (투 포인터) vs Sliding Window (슬라이딩 윈도우) 알고리즘"
 excerpt: "투 포인터, 슬라이딩 윈도우 알고리즘에 대해 알아보자"
 
 categories:
