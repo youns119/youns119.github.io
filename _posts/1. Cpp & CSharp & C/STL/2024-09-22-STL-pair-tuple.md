@@ -1,6 +1,6 @@
 ---
 title:  "[STL] pair, tuple에 대해서"
-excerpt: "STL - pair, tuple에 대해 알아보자"
+excerpt: "STL의 pair, tuple에 대해 알아보자"
 
 categories:
   - STL

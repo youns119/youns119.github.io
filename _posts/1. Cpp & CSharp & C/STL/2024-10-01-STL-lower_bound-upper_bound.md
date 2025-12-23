@@ -1,6 +1,6 @@
 ---
 title:  "[STL] lower_bound, upper_bound 함수에 대해서"
-excerpt: "STL - lower_bound, upper_bound 함수에 대해 알아보자"
+excerpt: "STL의 lower_bound, upper_bound 함수에 대해 알아보자"
 
 categories:
   - STL

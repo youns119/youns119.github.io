@@ -1,6 +1,6 @@
 ---
 title:  "[STL] set, unordered_set에 대해서"
-excerpt: "STL - set, unordered_set에 대해 알아보자"
+excerpt: "STL의 set, unordered_set에 대해 알아보자"
 
 categories:
   - STL

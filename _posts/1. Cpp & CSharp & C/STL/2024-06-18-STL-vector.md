@@ -1,6 +1,6 @@
 ---
 title:  "[STL] vector에 대해서"
-excerpt: "STL - vector에 대해 알아보자"
+excerpt: "STL의 vector에 대해 알아보자"
 
 categories:
   - STL

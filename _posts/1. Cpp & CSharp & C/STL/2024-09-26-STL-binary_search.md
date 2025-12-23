@@ -1,6 +1,6 @@
 ---
 title:  "[STL] binary_search 함수에 대해서"
-excerpt: "STL - binary_search 함수에 대해 알아보자"
+excerpt: "STL의 binary_search 함수에 대해 알아보자"
 
 categories:
   - STL

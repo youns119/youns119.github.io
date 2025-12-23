@@ -1,6 +1,6 @@
 ---
 title:  "[STL] unique 함수에 대해서"
-excerpt: "STL - unique 함수에 대해 알아보자"
+excerpt: "STL의 unique 함수에 대해 알아보자"
 
 categories:
   - STL

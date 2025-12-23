@@ -1,6 +1,6 @@
 ---
 title:  "[STL] remove 함수에 대해서"
-excerpt: "STL - remove 함수에 대해 알아보자"
+excerpt: "STL의 remove 함수에 대해 알아보자"
 
 categories:
   - STL

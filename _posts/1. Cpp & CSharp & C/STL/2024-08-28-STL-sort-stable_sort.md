@@ -1,6 +1,6 @@
 ---
 title:  "[STL] sort, stable_sort 함수에 대해서"
-excerpt: "STL - sort, stable_sort 함수에 대해 알아보자"
+excerpt: "STL의 sort, stable_sort 함수에 대해 알아보자"
 
 categories:
   - STL
