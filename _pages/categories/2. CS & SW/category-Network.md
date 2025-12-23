@@ -5,6 +5,7 @@ layout: archive
 breadcrumb: "Network"
 author_profile: true
 sidebar_custom: true
+classes: wide
 ---
 
 {% assign posts = site.categories.Network %}
