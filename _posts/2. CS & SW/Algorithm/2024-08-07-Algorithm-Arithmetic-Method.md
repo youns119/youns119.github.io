@@ -1,5 +1,5 @@
 ---
-title:  "[Algorithm] 여러 산술, 비트 기법에 대해"
+title:  "[Algorithm] 여러 산술, 비트 기법"
 excerpt: "여러가지 산술, 비트 기법 및 트릭에 대해 알아보자"
 
 categories:

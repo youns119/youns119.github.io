@@ -1,5 +1,5 @@
 ---
-title:  "[C++] stringstream에 대해서"
+title:  "[C++] C++의 stringstream에 대해"
 excerpt: "C++의 stringstream에 대해 알아보자"
 
 categories:

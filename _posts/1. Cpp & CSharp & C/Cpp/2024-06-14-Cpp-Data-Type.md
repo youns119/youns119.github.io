@@ -1,5 +1,5 @@
 ---
-title:  "[C++] C++의 기본 Data Type (자료형)에 대해서"
+title:  "[C++] C++의 기본 Data Type (자료형)에 대해"
 excerpt: "C++의 기본 자료형에 대해 알아보자"
 
 categories:

@@ -1,6 +1,6 @@
 ---
-title:  "[C++] Modular (나머지) 연산에 대해서"
-excerpt: "C++에서 Moduar 연산에 대해서 알아보자"
+title:  "[C++] C++의 Modular (나머지) 연산에 대해"
+excerpt: "C++에서 Moduar 연산에 대해 알아보자"
 
 categories:
   - Cpp

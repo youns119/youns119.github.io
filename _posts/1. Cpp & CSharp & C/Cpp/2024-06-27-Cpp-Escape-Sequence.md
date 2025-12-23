@@ -1,5 +1,5 @@
 ---
-title:  "[C++] 특수 문자 출력"
+title:  "[C++] C++의 특수 문자 출력에 대해"
 excerpt: "C++에서의 특수 문자 출력에 대해 알아보자"
 
 categories:

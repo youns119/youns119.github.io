@@ -1,6 +1,6 @@
 ---
-title:  "[C++] 문자열에 대해서"
-excerpt: "C++에서 문자열에 대해서 알아보자"
+title:  "[C++] C++의 문자열에 대해"
+excerpt: "C++에서 문자열에 대해 알아보자"
 
 categories:
   - Cpp

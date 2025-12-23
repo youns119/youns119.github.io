@@ -1,5 +1,5 @@
 ---
-title:  "[Algorithm] Greedy (그리디) 알고리즘에 대해"
+title:  "[Algorithm] Greedy (그리디) 알고리즘"
 excerpt: "그리디 알고리즘에 대해 알아보자"
 
 categories:

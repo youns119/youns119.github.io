@@ -1,5 +1,5 @@
 ---
-title:  "[Algorithm] Binominal Coefficient (이항 계수)에 대해"
+title:  "[Algorithm] Binominal Coefficient (이항 계수)"
 excerpt: "이항 계수에 대해 알아보자"
 
 categories:
