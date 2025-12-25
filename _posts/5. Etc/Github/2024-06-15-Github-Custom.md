@@ -86,7 +86,7 @@ Github 페이지로 들어가서 `New` 버튼을 눌러 새로운 `Repo`를 생�
 
 - [Github Readme Stats](https://github.com/anuraghazra/github-readme-stats)
 
-문법은 사용하는 방법에 따라서 너무나 다양해질 수 있기 때문에 하나하나 쓰긴 힘들고, 위의 이미지 중 두번째 이미지에 대한 나의 코드는 다음과 같다.
+문법은 사용하는 방법에 따라서 너무나 다양해질 수 있기 때문에 하나하나 쓰긴 힘들고, 위의 이미지 중 두 번째 이미지에 대한 나의 코드는 다음과 같다.
 
 ```yaml
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=youns119&show_icons=true&rank_icon=github&include_all_commits=true&theme=onedark)](https://github.com/anuraghazra/github-readme-stats)
