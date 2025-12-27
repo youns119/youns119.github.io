@@ -5,7 +5,7 @@ excerpt: "C++의 vector<bool>에 대해 알아보자"
 categories:
   - Cpp
 tags:
-  - [Cpp, auto]
+  - [Cpp, Data Structure, bit]
 
 toc: true
 toc_sticky: true

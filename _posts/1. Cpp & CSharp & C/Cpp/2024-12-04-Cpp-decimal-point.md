@@ -5,7 +5,7 @@ excerpt: "C++의 소수점 처리 방법에 대해 알아보자"
 categories:
   - Cpp
 tags:
-  - [Cpp, auto]
+  - [Cpp, Decimal Point, round, ceil, floor]
 
 toc: true
 toc_sticky: true
