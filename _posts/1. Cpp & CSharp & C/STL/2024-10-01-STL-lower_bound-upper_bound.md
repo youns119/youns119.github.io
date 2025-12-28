@@ -5,7 +5,7 @@ excerpt: "STL의 lower_bound, upper_bound 함수에 대해 알아보자"
 categories:
   - STL
 tags:
-  - [STL, Cpp, lower_bound, upper_bound]
+  - [STL, Cpp, lower_bound, upper_bound, Binary Search]
 
 toc: true
 toc_sticky: true

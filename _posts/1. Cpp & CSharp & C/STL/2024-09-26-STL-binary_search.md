@@ -5,7 +5,7 @@ excerpt: "STL의 binary_search 함수에 대해 알아보자"
 categories:
   - STL
 tags:
-  - [STL, Cpp, binary_search]
+  - [STL, Cpp, binary_search, Binary Search]
 
 toc: true
 toc_sticky: true
