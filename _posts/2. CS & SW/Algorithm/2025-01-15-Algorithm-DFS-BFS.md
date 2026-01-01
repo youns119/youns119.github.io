@@ -5,7 +5,7 @@ excerpt: "DFS, BFS에 대해 알아보자"
 categories:
   - Algorithm
 tags:
-  - [Algorithm, Graph Theory, Graph Search, DFS BFS]
+  - [Algorithm, Graph Theory, Graph Search, DFS, BFS]
 
 toc: true
 toc_sticky: true
