@@ -1,6 +1,6 @@
 ---
-title:  "[Algorithm] GCD (최대공약수), LCM (최소공배수)"
-excerpt: "최대공약수, 최소공배수에 대해 알아보자"
+title:  "[Algorithm] GCD (최대공약수), LCM (최소공배수) 알고리즘"
+excerpt: "최대공약수, 최소공배수 알고리즘에 대해 알아보자"
 
 categories:
   - Algorithm

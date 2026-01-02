@@ -1,6 +1,6 @@
 ---
-title:  "[Algorithm] Sorting (정렬)"
-excerpt: "정렬에 대해 알아보자"
+title:  "[Algorithm] Sorting (정렬) 알고리즘"
+excerpt: "정렬 알고리즘에 대해 알아보자"
 
 categories:
   - Algorithm

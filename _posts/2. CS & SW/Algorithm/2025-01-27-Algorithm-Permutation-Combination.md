@@ -1,6 +1,6 @@
 ---
-title:  "[Algorithm] Permutation (순열), Combination (조합)에 대해서"
-excerpt: "순열, 조합에 대해 알아보자"
+title:  "[Algorithm] Permutation (순열), Combination (조합) 알고리즘"
+excerpt: "순열, 조합 알고리즘에 대해 알아보자"
 
 categories:
   - Algorithm
