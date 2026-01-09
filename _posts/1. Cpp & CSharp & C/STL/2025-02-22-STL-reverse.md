@@ -1,11 +1,11 @@
 ---
-title:  "[STL] fill 함수에 대해서"
-excerpt: "STL의 fill 함수에 대해 알아보자"
+title:  "[STL] reverse 함수에 대해서"
+excerpt: "STL의 reverse 함수에 대해 알아보자"
 
 categories:
   - STL
 tags:
-  - [STL, Cpp, fill]
+  - [STL, Cpp, reverse]
 
 toc: true
 toc_sticky: true
