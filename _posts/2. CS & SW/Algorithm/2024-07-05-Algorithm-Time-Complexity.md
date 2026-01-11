@@ -74,9 +74,9 @@ last_modified_at: 2024-07-05
 1. <span style = "color:lightyellow">상수항을 제거한다.</span>
     - `O(2N)`이라면 `O(N)`으로 표기한다.
 2. <span style = "color:lightyellow">가장 큰 항만 남긴다.</span>
-    - `O(N^2 + N)`이라면 `O(N^2)`으로 표기한다.
+    - `O(N² + N)`이라면 `O(N²)`으로 표기한다.
 3. <span style = "color:lightyellow">순차 실행은 덧셈한다.</span>
-    - `A`가 `O(N)`이고 `B`가 `O(N^2)`일 때, 전체는 `O(N + N^2) = O(N^2)`이다.
+    - `A`가 `O(N)`이고 `B`가 `O(N²)`일 때, 전체는 `O(N + N²) = O(N²)`이다.
 4. <span style = "color:lightyellow">중첩 루프는 곱셈한다.</span>
     - 바깥 루프가 `N`번 반복이고 안쪽 루프가 `M`번 반복이라면 `O(NM)`이다.
 5. <span style = "color:lightyellow">일정 비율로 줄어드는 반복은 로그이다.</span>
@@ -107,11 +107,11 @@ last_modified_at: 2024-07-05
   - 순차 탐색
 - <span style = "color:lightblue">`O(N log N)` - 선형 로그 시간</span>
   - 합병 정렬, 퀵 정렬
-- <span style = "color:lightblue">`O(N^2)` - 2차 시간</span>
+- <span style = "color:lightblue">`O(N²)` - 2차 시간</span>
   - 버블 정렬, 선택 정렬, 삽입 정렬
-- <span style = "color:lightblue">`O(N^3)` - 3차 시간</span>
+- <span style = "color:lightblue">`O(N³)` - 3차 시간</span>
   - 플로이드 워셜 알고리즘
-- <span style = "color:lightblue">`O(C^2)` - 지수 시간</span>
+- <span style = "color:lightblue">`O(C²)` - 지수 시간</span>
   - 하노이의 탑
 
 따라서 `상수 시간`에 가까운 알고리즘일수록 성능이 좋다고 보면 된다.
@@ -122,7 +122,7 @@ last_modified_at: 2024-07-05
 
 > 입력 크기 `N`이 커질수록 추가 메모리가 어떻게 커지는가.
 
-즉, 간단히 말하자면 이 **<u>알고리즘를 실행하는데 필요한 메모리가 얼마나 되냐</u>**를 보는 것이다. 만약 `N`의 길이의 배열이 이중 구조로 되어 있다면, 공간 복잡도는 `O(N^2)`이 된다.
+즉, 간단히 말하자면 이 **<u>알고리즘를 실행하는데 필요한 메모리가 얼마나 되냐</u>**를 보는 것이다. 만약 `N`의 길이의 배열이 이중 구조로 되어 있다면, 공간 복잡도는 `O(N²)`이 된다.
 
 일반적으로 현대에 들어서는 하드웨어의 성능이 매우 좋아졌기에 용량의 부족함이 많이 사라졌기에, `공간 복잡도`의 중요성이 떨어졌다. 하지만 불필요한 메모리 공간 할당은 있으면 좋을게 없으므로, 시간 복잡도보다는 아니지만 항상 신경을 써주도록 하자.
 
