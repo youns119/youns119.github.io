@@ -5,7 +5,7 @@ excerpt: "C++에서 문자열에 대해 알아보자"
 categories:
   - Cpp
 tags:
-  - [Cpp, string, STL]
+  - [Cpp, string]
 
 toc: true
 toc_sticky: true
